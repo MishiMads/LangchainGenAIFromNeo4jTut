@@ -51,6 +51,23 @@ for pdf_path in pdf_paths:
 
 print(f"\nTotal chunks from all documents: {len(all_documents)}")
 
+"""
+pdf_path = R"C:\Users\mnj-7\Medialogi\genai-integration-langchain\tidlig-algebra.pdf" # Make sure this path is correct
+print(f"Loading content from {pdf_path}...")
+
+loader = PyPDFLoader(pdf_path)
+pages = loader.load()
+
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=1500,  # A larger chunk size can provide more context to the LLM
+    chunk_overlap=200,
+    length_function=len
+)
+documents = text_splitter.split_documents(pages)
+print(f"Loaded and split the PDF into {len(documents)} chunks.")
+"""
+
+
 # --- 3. Extract a Knowledge Graph using a Local LLM ---
 print("Extracting entities and relationships using local LLM...")
 
@@ -81,8 +98,7 @@ print("Successfully stored knowledge graph in Neo4j.")
 
 print("\nCreating embedding model for vector index...")
 model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-#model_kwargs = {'device': 'cpu'}
-model_kwargs = {'device': 'cuda'}  # Use GPU
+model_kwargs = {'device': 'cpu'}
 embedding_model = HuggingFaceEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs
@@ -94,7 +110,7 @@ neo4j_vector = Neo4jVector.from_documents(
     embedding=embedding_model,
     graph=graph,
     #index_name="algebra",
-    index_name="Math",
+    index="Math",
     node_label="MathChunks",
     embedding_node_property="embedding",
     text_node_property="text",

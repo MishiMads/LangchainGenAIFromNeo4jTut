@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 # --- LangChain Imports ---
 from langchain_community.chat_models import ChatOllama
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.llms.ollama import Ollama
 from langchain_community.vectorstores import Neo4jVector
 from langchain.chains import RetrievalQA
 
@@ -16,17 +17,22 @@ from langchain.prompts import ChatPromptTemplate
 load_dotenv()
 
 # --- 1. Initialize the LLM for Generation ---
+
 print("Initializing local LLM via Ollama...")
 llm = ChatOllama(
     model="llama3.1",
     temperature=0
 )
 
+# --- Comment above out and use this instead to use Mistral -> it can only answer in English though ---
+#llm = Ollama(model="mistral")
+
 # --- 2. Initialize the Embedding Model for Retrieval ---
 # IMPORTANT: Use the exact same model you used for embedding the document
 print("Initializing Hugging Face embedding model...")
 model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-model_kwargs = {'device': 'cpu'}
+#model_kwargs = {'device': 'cpu'}
+model_kwargs = {'device': 'cuda'}  # Use GPU
 embedding_model = HuggingFaceEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs
@@ -40,7 +46,7 @@ vector_store = Neo4jVector.from_existing_index(
     url=os.getenv("NEO4J_URI"),
     username=os.getenv("NEO4J_USERNAME"),
     password=os.getenv("NEO4J_PASSWORD"),
-    index_name="algebra",  # The name of the index you created
+    index_name="Math",  # The name of the index you created
     text_node_property="text", # The property containing the text
 )
 
@@ -67,7 +73,7 @@ rag_chain = (
 )
 
 # --- 5. Invoke the chain with your question ---
-question = "Hvad skal eleverne lærer??"
+question = "Kan du fortælle mig hvilke opgaver jeg skal lave? Jeg er en skolelev"
 print(f"\nInvoking chain with question: {question}")
 
 response = rag_chain.invoke(question)
