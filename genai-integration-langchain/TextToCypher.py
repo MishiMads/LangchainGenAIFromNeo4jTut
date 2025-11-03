@@ -31,8 +31,8 @@ llm = ChatOllama(
 # IMPORTANT: Use the exact same model you used for embedding the document
 print("Initializing Hugging Face embedding model...")
 model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-#model_kwargs = {'device': 'cpu'}
-model_kwargs = {'device': 'cuda'}  # Use GPU
+model_kwargs = {'device': 'cpu'}
+#model_kwargs = {'device': 'cuda'}  # Use GPU
 embedding_model = HuggingFaceEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs
