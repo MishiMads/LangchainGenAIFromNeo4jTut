@@ -73,7 +73,7 @@ rag_chain = (
 )
 
 # --- 5. Invoke the chain with your question ---
-question = "Kan du fortælle mig hvilke opgaver jeg skal lave? Jeg er en skolelev"
+question = "Kan du give mig en matematik "
 print(f"\nInvoking chain with question: {question}")
 
 response = rag_chain.invoke(question)
