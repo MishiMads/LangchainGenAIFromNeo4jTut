@@ -1,6 +1,9 @@
 # LangchainGenAIFromNeo4jTut
 
-You need to download sentence-transformers so run this:
+First run this:
+pip install -r GraffyReqs.txt
+
+Afterward, you need to download sentence-transformers so run this:
 
 pip install -U sentence-transformers
 
