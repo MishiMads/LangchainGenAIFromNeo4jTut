@@ -21,19 +21,19 @@ graph = Neo4jGraph(
 )
 
 # For a fresh start, you can uncomment the next line to delete all existing data
-# print("Clearing the database...")
-# graph.query("MATCH (n) DETACH DELETE n")
-
-# --- 2. Load and Process the PDF Document ---
+# NOTE: It is HIGHLY recommended to uncomment this for your test.
+print("Clearing the database...")
+graph.query("MATCH (n) DETACH DELETE n")
 
 # --- 2. Load and Process Multiple PDF Documents ---
 pdf_paths = [
     R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Fokus_På_Regnestrategier.pdf",
-    R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Talforståelse.pdf", # Add paths to your other PDFs
-    R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Tidlig_Algebra.pdf"
+    R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Talforståelse.pdf",
+    R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Tidlig_Algebra.pdf",
+    R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\GSK Fælles Mål Matematik SIDE 6 KUN.pdf"
 ]
 
-all_documents = [] # This will store chunks from all PDFs
+all_documents = []  # This will store chunks from all PDFs
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1500,
@@ -46,7 +46,7 @@ for pdf_path in pdf_paths:
     loader = PyPDFLoader(pdf_path)
     pages = loader.load()
     documents = text_splitter.split_documents(pages)
-    all_documents.extend(documents) # Add the chunks to our main list
+    all_documents.extend(documents)  # Add the chunks to our main list
     print(f" -> Split into {len(documents)} chunks.")
 
 print(f"\nTotal chunks from all documents: {len(all_documents)}")
@@ -54,16 +54,36 @@ print(f"\nTotal chunks from all documents: {len(all_documents)}")
 # --- 3. Extract a Knowledge Graph using a Local LLM ---
 print("Extracting entities and relationships using local LLM...")
 
-# Instantiate the local LLM you want to use through Ollama
-# IMPORTANT: Replace "llama3.1" with the model you pulled (e.g., "mistral")
+# Instantiate the local LLM through Ollama
 llm = ChatOllama(model="llama3.1", temperature=0)
 
+# --- START: KEY CHANGE ---
+# Define the types of nodes we expect the LLM to find.
+# This helps the LLM focus and correctly label the nodes with their names.
+# We are using Danish labels since the content is Danish.
+# You may need to add or remove labels from this list for best results.
+expected_node_labels = [
+    "Begreb",  # Concept
+    "Strategi",  # Strategy
+    "Regnestrategi",  # Calculation Strategy
+    "Emne",  # Topic
+    "Metode",  # Method
+    "Talforståelse",  # Number Sense
+    "Algebra",  # Algebra
+    "Ligning",  # Equation
+    "Problem"  # Problem
+]
+
 # The transformer that will convert text chunks into graph structures
-llm_transformer = LLMGraphTransformer(llm=llm)
+llm_transformer = LLMGraphTransformer(
+    llm=llm,
+    allowed_nodes=expected_node_labels  # <-- This is the new parameter
+)
+# --- END: KEY CHANGE ---
 
 # Process the documents and convert them to graph structures
-# This step can be slow, especially without a GPU
-graph_documents = llm_transformer.convert_to_graph_documents(documents)
+print("Converting documents to graph format (this may take a while)...")
+graph_documents = llm_transformer.convert_to_graph_documents(all_documents)
 
 # Add the extracted graph data to Neo4j
 print("Adding extracted graph to Neo4j...")
@@ -74,33 +94,32 @@ graph.add_graph_documents(
 )
 print("Successfully stored knowledge graph in Neo4j.")
 
-
 # --- 4. Create a Vector Index for Semantic Search ---
 # This part is similar to your original script. It creates separate 'Chunk' nodes
 # and a vector index on them, allowing for similarity searches.
 
 print("\nCreating embedding model for vector index...")
 model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-#model_kwargs = {'device': 'cpu'}
+# model_kwargs = {'device': 'cpu'}
 model_kwargs = {'device': 'cuda'}  # Use GPU
 embedding_model = HuggingFaceEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs
 )
 
-print("Embedding documents and creating the 'algebra' vector index...")
+print("Embedding documents and creating the 'Math' vector index...")
 neo4j_vector = Neo4jVector.from_documents(
-    documents,
+    all_documents,
     embedding=embedding_model,
     graph=graph,
-    #index_name="algebra",
     index_name="Math",
     node_label="MathChunks",
     embedding_node_property="embedding",
     text_node_property="text",
 )
-print("Successfully created and populated the 'algebra' vector index.")
 
+# --- MINOR FIX: Updated print statement to match the index_name ---
+print("Successfully created and populated the 'Math' vector index.")
 
 # --- 5. Verify the Results ---
 print("\n--- Verification ---")
@@ -112,6 +131,13 @@ try:
     print(f"Knowledge Graph Stats:")
     print(f" -> Number of nodes: {node_count}")
     print(f" -> Number of relationships: {rel_count}")
+
+    # Also, let's check the labels that were created
+    labels = graph.query("CALL db.labels()")
+    print(" -> Node Labels in DB:")
+    for label in labels:
+        print(f"    - {label['label']}")
+
 except Exception as e:
     print(f"Could not query graph stats: {e}")
 
@@ -123,7 +149,12 @@ result_with_scores = neo4j_vector.similarity_search_with_score(query, k=3)
 print("\n--- Similarity Search Results ---")
 for doc, score in result_with_scores:
     print(f"Similarity Score: {score:.4f}")
-    print(f"Source Page: {doc.metadata.get('page', 'N/A')}")
+    # Access metadata, note that 'page' might be 0-indexed
+    page_num = doc.metadata.get('page', 'N/A')
+    if isinstance(page_num, int):
+        page_num += 1  # Add 1 to page_num if it's an integer for human-readable format
+
+    print(f"Source Page: {page_num}")
     print(f"Text: {doc.page_content[:250]}...\n")
 
 print("--- Script Finished ---")

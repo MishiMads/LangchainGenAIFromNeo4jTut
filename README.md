@@ -13,4 +13,4 @@ langchain==0.3.25
 langchain-community==0.3.9
 langchain-core==0.3.63
 langchain-experimental==0.3.3
-
+langchain-neo4j==0.4.0
