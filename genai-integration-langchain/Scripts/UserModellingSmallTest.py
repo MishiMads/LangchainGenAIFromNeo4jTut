@@ -1,3 +1,4 @@
+
 import os
 from dotenv import load_dotenv
 from neo4j import GraphDatabase
@@ -31,6 +32,11 @@ def log_interaction(driver, user_id, question, answer):
     // Connect the user to their question, and the question to its answer
     MERGE (u)-[:ASKED {timestamp: datetime()}]->(q)
     MERGE (q)-[:RECEIVED_ANSWER]->(a)
+    
+    // Connect the user answer to the topics relevant topics
+    MERGE (u)-[:RECEIVED_ANSWER]->(a)
+    
+    
     """
     try:
         with driver.session() as session:
@@ -162,7 +168,7 @@ rag_chain = (
 user_id = "Jakob"
 
 # --- First Question ---
-question_1 = "Hej jeg hedder Jakob, hvad for noget matematik skal jeg lære?"
+question_1 = "Hjælp mig med at plusse?"
 print(f"\nInvoking chain for user '{user_id}' with question: {question_1}")
 
 response_1 = rag_chain.invoke({"question": question_1, "user_id": user_id})
@@ -174,26 +180,6 @@ print(response_1)
 print("Logging interaction 1 to Neo4j...")
 log_interaction(neo4j_driver, user_id, question_1, response_1)
 
-# --- Second (Follow-up) Question ---
-question_2 = "Hvad var det nu, jeg spurgte om lige før?"
-print(f"\nInvoking chain for user '{user_id}' with follow-up: {question_2}")
-
-response_2 = rag_chain.invoke({"question": question_2, "user_id": user_id})
-
-print("\n--- Final Answer 2 (Follow-up) ---")
-print(response_2)
-print("(This answer should use the history of the first question)")
-
-# Log this interaction
-print("Logging interaction 2 to Neo4j...")
-log_interaction(neo4j_driver, user_id, question_2, response_2)
-
-question_7 = "Hvad er mit navn?"
-print(f"\nInvoking chain for user '{user_id}' with question: {question_7}")
-
-response_7 = rag_chain.invoke({"question": question_7, "user_id": user_id})
-print("\n--- Final Answer 7 (Follow-up) ---")
-print(response_7)
 
 
 # --- 6. Clean up ---
