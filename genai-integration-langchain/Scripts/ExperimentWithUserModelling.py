@@ -10,6 +10,7 @@ from langchain_community.vectorstores import Neo4jVector
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from langchain.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
 
 # Load environment variables
 load_dotenv()
@@ -38,12 +39,34 @@ def log_interaction(driver, user_id, question, answer):
     except Exception as e:
         print(f"Error logging interaction: {e}")
 
-# --- 1. Initialize the LLM for Generation ---
-print("Initializing local LLM via Ollama...")
-llm = ChatOllama(
-    model="llama3.1",
-    temperature=0
-)
+# Options: "openai" or "local"
+LLM_PROVIDER = "local"
+
+print(f"--- SELECTED LLM PROVIDER: {LLM_PROVIDER.upper()} ---")
+
+# --- 1. Initialize Models ---
+
+llm = None
+
+if LLM_PROVIDER == "openai":
+    # Initialize GPT-4o
+    print("Initializing OpenAI GPT-4o...")
+    if not os.getenv("OPENAI_API_KEY"):
+        print("ERROR: OPENAI_API_KEY is missing in .env file")
+        exit()
+
+    llm = ChatOpenAI(
+        model="gpt-4o",
+        temperature=0
+    )
+else:
+    # Initialize Local Llama
+    print("Initializing local LLM (Llama 3.1)...")
+    llm = ChatOllama(
+        model="llama3.1",
+        temperature=0,
+        # Keep raw=True or format="json" can sometimes help, but the Parser below is best
+    )
 
 # --- 2. Initialize the Embedding Model for Retrieval ---
 print("Initializing Hugging Face embedding model...")
