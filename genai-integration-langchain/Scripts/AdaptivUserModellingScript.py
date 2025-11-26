@@ -39,7 +39,7 @@ if LLM_PROVIDER == "openai":
     if not os.getenv("OPENAI_API_KEY"):
         print("ERROR: OPENAI_API_KEY mangler i .env filen")
         exit()
-    llm = ChatOpenAI(model="gpt-4o", temperature=0)
+    llm = ChatOpenAI(model="gpt-5-mini", temperature=0)
 else:
     print("Initializing local LLM (Llama 3.1)...")
     llm = ChatOllama(model="llama3.1", temperature=0)
