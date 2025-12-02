@@ -1,52 +1,36 @@
-import os
-from langchain_community.llms import Ollama
-from langchain.graphs import Neo4jGraph
-from neo4j import Query, GraphDatabase
-from langchain.chains import GraphCypherQAChain
+import datetime
 
-from dotenv import load_dotenv
-load_dotenv()
+student_name = "poo"
+operation_name = "bæ"
+is_correct = True
+now_time = datetime.datetime.now()
+if is_correct:
+    query = f"""
+        MATCH (s:Student {{_navn: '{student_name}'}}),
+              (o:Operation {{name: '{operation_name}'}})
+        MERGE (s)-[rel:QUESTIONS_ANSWERED]->(o)
+        ON MATCH SET rel.correctAnswers = rel.correctAnswers + 1,
+                      rel.totalAnswers = rel.totalAnswers + 1
+        ON CREATE SET rel.correctAnswers = 1,
+                      rel.incorrectAnswers = 0,
+                      rel.totalAnswers = 1;
+        """
+else:
+    query = f"""
+        MATCH (s:Student {{_navn: '{student_name}'}}),
+              (o:Operation {{name: '{operation_name}'}})
+        MERGE (s)-[rel:QUESTIONS_ANSWERED]->(o)
+        ON MATCH SET rel.incorrectAnswers = rel.incorrectAnswers + 1,
+                      rel.totalAnswers = rel.totalAnswers + 1
+        ON CREATE SET rel.correctAnswers = 0,
+                      rel.incorrectAnswers = 1,
+                      rel.totalAnswers = 1;
+        """
 
-# 1. Connect to Neo4j
-graph = Neo4jGraph(
-    url=os.getenv('NEO4J_URI'),
-    username=os.getenv('NEO4J_USERNAME'),
-    password=os.getenv('NEO4J_PASSWORD')
-)
+query2 = f"""
+    MERGE (s)-[rel2:LAST_ANSWERED]->(o)
+    SET rel2.recency = {now_time}
+    """
 
-print(graph.schema)
-
-graphDriver = GraphDatabase.driver(
-    os.getenv('NEO4J_URI'),
-    auth = (os.getenv('NEO4J_USERNAME'), os.getenv('NEO4J_PASSWORD'))
-)
-
-schema_query = """
-CALL apoc.schema.assert(
-  {
-    Concept: ["name"],
-    Example: ["exampleName"],
-    Topic: ["topicName"],
-    Operation: ["name"],
-    MainTopic: ["id"],
-    Strategy: ["name"],
-    RepresentationOfNumbers: ["name"],
-    Property: ["name"],
-    SubSkill: ["name"],
-    Student: ["elevnr"]
-  },
-  {
-    QUESTIONS_ANSWERED: ["totalAnswers"],
-    LAST_ANSWERED: ["timeSpent"],
-    HAS_HAD_TOPIC: ["recency"],
-    IS_ENGAGED_IN: ["levelOfEngagement"]
-  }
-)
-"""
-
-
-with graphDriver.session() as session:
-    result = session.run(schema_query)
-    print(result)
-    for record in result:
-        print(record.data())
+new_query = query + query2
+print(new_query)

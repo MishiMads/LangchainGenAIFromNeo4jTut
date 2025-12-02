@@ -130,7 +130,7 @@ else:
 # ==========================================
 # 2. DATA LOADING
 # ==========================================
-filename = R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\Golden Dataset.xlsx"
+filename = R"C:\Users\jakob\Desktop\Git Repos\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\Golden Dataset.xlsx"
 test_data = []
 
 print(f"\n--- Loading Test Data from {filename} ---")
