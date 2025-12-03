@@ -276,6 +276,13 @@ VIGTIGE REGLER:
 4. Brug ALDRIG flere ord end nødvendigt - max 2-3 sætninger
 5. GIV ALDRIG det direkte svar - guide eleven til at tænke selv
 
+EKSEMPLER:
+Spørgsmål: "Hvad er 7 + 8?"
+Svar: "Kan du huske 10'er venner? 7 + 3 = 10. Hvor mange mere skal du lægge til?"
+
+Spørgsmål: "Hvad er 6 + 6?"
+Svar: "Lad os bruge dobbelt-op! Hvis 6 + 6 = 12, hvad tror du så 6 + 7 er?"
+
 KONTEKST (Fra lærebogen):
 {context}
 
@@ -429,23 +436,15 @@ def test_math_rag(data):
 
     pedagogical_metric = GEval(
         name="Pedagogical Quality",
-        criteria="""Evaluate how well the response teaches 1st-3rd grade Danish students (ages 7-9) math concepts.
-
-    SCORING GUIDELINES:
-    0.9-1.0: Exceptional - Uses multiple guiding questions, references curriculum strategies (10'er venner, dobbelt-op), and avoids direct answers
-    0.7-0.89: Good - Uses guiding questions and at least one pedagogical technique effectively
-    0.5-0.69: Adequate - Uses some questions OR pedagogical techniques, may give partial hints
-    0.3-0.49: Weak - Provides mostly direct answers with minimal guidance
-    0.0-0.29: Poor - Only gives direct numeric answers with no teaching approach
-
-    EVALUATION FOCUS:
-    1. Uses questions to guide thinking (MOST IMPORTANT)
-    2. References curriculum strategies when applicable (bonus, not required)
-    3. Avoids stating final numeric answers directly
-
-    IMPORTANT: Language is assumed age-appropriate by default. Do not penalize responses for not explicitly mentioning age-appropriateness. Focus on whether the response uses questions and teaching techniques rather than just providing answers.""",
+        evaluation_steps=[
+            "Analyze if the response uses guiding questions or hints instead of giving direct answers",
+            "Check if an appropriate teaching strategy is used or referenced when relevant (e.g., 10'er venner, dobbelt-op, tier-venner)"
+            " - multiple strategies are NOT required",
+            "Evaluate if the language avoids overly complex academic terminology"
+            " - simple Danish phrases that 7-9 year olds encounter in school are acceptable"
+        ],
         evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT],
-        threshold=0.5,
+        threshold=0.7,
         model=local_judge,
         strict_mode=False
     )
@@ -461,7 +460,6 @@ def test_math_rag(data):
     # Define all metrics you want to test
     metrics = [
         faithfulness_metric,      # Tests if answer is faithful to the context (uses knowledge graph)
-        answer_relevancy_metric,  # Tests if answer is relevant to the question
         pedagogical_metric,       # Tests pedagogical quality
     ]
 
