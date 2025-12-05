@@ -1,8 +1,9 @@
 import os
 import json
 import pandas as pd
+from deepeval.evaluate import evaluate
 
-from deepeval.metrics import GEval
+from deepeval.metrics import GEval, faithfulness, FaithfulnessMetric
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from deepeval.models import GPTModel
 
@@ -12,6 +13,7 @@ from neo4j import GraphDatabase
 
 from dotenv import load_dotenv
 load_dotenv()
+
 
 llm = ChatOpenAI(
     openai_api_key=os.getenv("OPENAI_API_KEY"),
@@ -101,21 +103,32 @@ def retrieve_context(query):
         return [record.data() for record in result]
 
 
-def generate_rag_answer(question):
-    context_records = retrieve_context(question)
-    context = "\n".join([str(r) for r in context_records])
-
+def generate_rag_answer(question, input_context):
     prompt = f"""
-    Brug KUN følgende graf-viden til at svare:
+        Du er en hjælpsom matematik-lærer for indskolingen (1.-3. klasse).
 
-    ### GRAPH KNOWLEDGE
-    {context}
-
-    ### ELEV SPØRGSMÅL
-    {question}
-
-    Svar tydeligt og pædagogisk.
-    """
+        VIGTIGE REGLER:
+        1. Hvis konteksten indeholder en relevant strategi (fx "10'er venner", "dobbelt-op", "tier-venner"), så SKAL du bruge den
+        2. Hvis konteksten IKKE passer til spørgsmålet (fx addition-strategi for division), så ignorer den og brug almen viden
+        3. Forklar strategien trin-for-trin på en måde børn kan forstå
+        4. Brug ALDRIG flere ord end nødvendigt - max 2-3 sætninger
+        5. GIV ALDRIG det direkte svar - guide eleven til at tænke selv
+        
+        EKSEMPLER:
+        Spørgsmål: "Hvad er 7 + 8?"
+        Svar: "Kan du huske 10'er venner? 7 + 3 = 10. Hvor mange mere skal du lægge til?"
+        
+        Spørgsmål: "Hvad er 6 + 6?"
+        Svar: "Lad os bruge dobbelt-op! Hvis 6 + 6 = 12, hvad tror du så 6 + 7 er?"
+        
+        KONTEKST (Fra lærebogen):
+        {input_context}
+        
+        SPØRGSMÅL:
+        {question}
+        
+        SVAR (til eleven):
+        """
 
     answer = llm.invoke(prompt).content
     return answer
@@ -130,10 +143,18 @@ geval = GEval(
             " - simple Danish phrases that 7-9 year olds encounter in school are acceptable"
     ],
     model = evaluation_llm,
-    evaluation_params=[LLMTestCaseParams.INPUT, LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT]
+    #evaluation_params=[LLMTestCaseParams.INPUT, LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT]
+    evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT], #We only use this because we only use this
 )
 
-def evaluate_with_geval(question, model_answer, ideal_answer, category):
+faithful = FaithfulnessMetric(
+    model = evaluation_llm,
+    #threshold = 0.5,
+    include_reason = True
+)
+
+#Evaluate using both metrics
+def evaluate_with_metrics(question, model_answer, ideal_answer, category, retrieval_context):
     #Truncation here
     question_t = truncate(question)
     ideal_answer_t = truncate(ideal_answer)
@@ -144,13 +165,27 @@ def evaluate_with_geval(question, model_answer, ideal_answer, category):
         actual_output=model_answer_t,
         expected_output=ideal_answer_t,
         category=category,
+        retrieval_context=[retrieval_context]
     )
 
-    result = geval.measure(test_case)
-    if isinstance(result, float):
-        return {"score": result, "passed": None, "reason": None}
-    else:
-        return {"score": result.score, "passed": result.success, "reason": result.reason}
+    result_geval = geval.measure(test_case)
+    result_faithful = faithful.measure(test_case)
+    #print(faithful.reason)
+
+    def unpack(result):
+        if hasattr(result, "reason"):
+            return {
+                "score": result.score,
+                "passed": result.success,
+                "reason": result.reason
+            }
+        else:
+            return {"score": float(result), "passed": None, "reason": None}
+
+    return{
+        "semantic_alignment": unpack(geval),
+        "faithfulness": unpack(faithful),
+    }
 
 df = pd.read_excel(r"C:\Users\jakob\Desktop\Git Repos\LangchainGenAIFromNeo4jTut\Jakob's_Stuff\Golden Dataset IGEN.xlsx")
 
@@ -163,17 +198,20 @@ def run_pipeline(row):
     print(f"📘 Question: {question}")
     print(f"📚 Category: {category}")
 
-    # Step 1: Generate answer using RAG + Neo4j
-    model_answer = generate_rag_answer(question)
+    #Get context and do RAG
+    context_records = retrieve_context(question)
+    context = "\n".join([str(r) for r in context_records])
+    model_answer = generate_rag_answer(question, context)
     print("\n🤖 Model Answer:")
     print(model_answer)
 
-    # Step 2: Evaluate using GEval
-    result = evaluate_with_geval(
+    #Metric evaluation
+    result = evaluate_with_metrics(
         question,
         model_answer,
         ideal,
-        category
+        category,
+        context
     )
 
     print("\n🏁 Evaluation:")
@@ -181,6 +219,8 @@ def run_pipeline(row):
     return result
 
 results = []
+
+#Proper loop and save
 for i, row in df.iterrows():
     print(f"\n=== Running Test {i+1}/{len(df)} ===")
     results.append(run_pipeline(row))
