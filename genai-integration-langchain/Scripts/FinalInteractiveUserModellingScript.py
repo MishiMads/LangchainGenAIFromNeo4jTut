@@ -29,7 +29,8 @@ print(f"--- SELECTED LLM PROVIDER: {LLM_PROVIDER.upper()} ---")
 llm = None
 
 if LLM_PROVIDER == "openai":
-    print("Initializing OpenAI GPT-5-mini...")
+    # Initialize GPT-4o
+    print("Initializing OpenAI GPT-4o...")
     if not os.getenv("OPENAI_API_KEY"):
         print("ERROR: OPENAI_API_KEY is missing in .env file")
         exit()
@@ -240,6 +241,24 @@ Du er en matematik-tutor for eleven {user_id}. Du taler dansk.
 Her er de seneste beskeder i samtalen (Chat Historik):
 {context}
 
+### DIN OPGAVE NU
+Din opgave afhænger af, hvad eleven lige har skrevet:
+
+1. **HVIS eleven svarer på et regnestykke fra historikken:**
+   - Tjek om svaret er rigtigt.
+   - HVIS RIGTIGT: Sig "Rigtigt!" eller "Godt gået!" og stil straks et NYT regnestykke.
+   - HVIS FORKERT: Sig venligt, at det ikke er helt rigtigt. Giv et hint baseret på konteksten som indeholder regnestrategier og læringsstrategier. Giv IKKE svaret endnu. Spørg igen.
+
+2. **HVIS eleven stiller et spørgsmål:**
+   - Svar på spørgsmålet ved hjælp af din viden.
+
+3. **HVIS samtalen lige er startet:**
+   - Stil et konkret matematikspørgsmål (f.eks. "Hvad er 6 gange 6?").
+
+### REGLER (MEGET VIGTIGT)
+- **SIG IKKE "HEJ" IGEN:** Hvis der allerede er beskeder i "Chat Historik", må du IKKE starte med at sige hej eller præsentere dig selv. Gå direkte til sagen.
+- **HOLD FOKUS:** Hvis du lige har stillet et spørgsmål (se historikken), og eleven svarer forkert (f.eks. svarer 61 til 7*9), skal du rette dem. Du må IKKE bare stille det samme spørgsmål igen uden kommentar.
+
 ### DATA OM FORRIGE KONTEKST
 (Brug dette hvis historikken er tom eller uklar):
 Du spurgte sidst om: "{last_context}"
@@ -247,6 +266,7 @@ Du spurgte sidst om: "{last_context}"
 ### ELEVENS NYE BESKED:
 "{question}"
 
+### DIT SVAR:
 """
 rag_prompt = ChatPromptTemplate.from_template(rag_template)
 

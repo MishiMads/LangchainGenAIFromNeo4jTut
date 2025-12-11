@@ -85,11 +85,11 @@ except Exception as e:
 llm = None
 
 if LLM_PROVIDER == "openai":
-    print("Initializing OpenAI GPT-4o...")
+    print("Initializing OpenAI GPT-5-mini...")
     if not os.getenv("OPENAI_API_KEY"):
         print("ERROR: OPENAI_API_KEY is missing in .env file")
         exit()
-    llm = ChatOpenAI(model="gpt-4o", temperature=0)
+    llm = ChatOpenAI(model="gpt-5-mini", temperature=0)
 else:
     print("Initializing local LLM (Llama 3.1)...")
     # Added stop tokens here to prevent looping

@@ -6,6 +6,8 @@ import asyncio
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from dotenv import load_dotenv
+from openpyxl import Workbook
+from datetime import datetime
 
 # Disable verbose DeepEval logging
 os.environ["CONFIDENT_METRIC_LOGGING_VERBOSE"] = "0"
@@ -145,7 +147,7 @@ else:  # Default to local llama
 # 2. DATA LOADING
 # ==========================================
 # Using a relative path is safer than an absolute C:\ path
-filename = R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\Golden Dataset.xlsx"
+filename = R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\GroupedDatasetByStrategy.xlsx"
 test_data = []
 
 print(f"\n--- Loading Test Data from {filename} ---")
@@ -197,7 +199,7 @@ try:
                 test_data.append({
                     "input": row["Elevens Spørgsmål"],
                     "expected_output": row["Ideelt Robotsvar (Guidende)"],
-                    "category": row.get("Kategori", "General")
+                    "category": row.get("Overgruppe", "General")
                 })
             print(f"Successfully loaded {len(test_data)} test cases.")
         else:
@@ -494,4 +496,85 @@ def test_math_rag(data):
         raise  # Re-raise to fail the test properly
 
 
+
+
+
+    #### SAVING RESULTS TO EXCEL LOGIC HERE ####
+    test_results = []
+    # After metrics evaluation, before assert_test
+    result_entry = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "category": data.get("category", "General"),
+        "query": query,
+        "expected_output": expected,
+        "actual_output": actual_output[:200] + "..." if len(actual_output) > 200 else actual_output,
+        "context_length": len(retrieval_context),
+        "faithfulness_score": faithfulness_metric.score,
+        "pedagogical_score": pedagogical_metric.score,
+        "test_passed": False
+    }
+
+    try:
+        assert_test(test_case, metrics)
+        print("✅ TEST PASSED - All metrics above threshold!\n")
+        result_entry["test_passed"] = True
+    except AssertionError as e:
+        error_msg = str(e)
+        print(f"\n❌ TEST FAILED")
+        print(f"{'=' * 60}")
+        print(f"{error_msg}")
+        print(f"{'=' * 60}\n")
+        result_entry["failure_reason"] = error_msg[:200]
+        raise
+    finally:
+        test_results.append(result_entry)
+
+    def pytest_sessionfinish(session, exitstatus):
+        """Called after whole test run finished"""
+        if test_results:
+            save_results_to_excel(test_results)
+
+    def save_results_to_excel(results):
+        """Save test results to an Excel file"""
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "Test Results"
+
+        headers = [
+            "Timestamp", "Category", "Query", "Expected Output",
+            "Actual Output", "Context Length", "Faithfulness Score",
+            "Pedagogical Score", "Test Passed", "Failure Reason"
+        ]
+        ws.append(headers)
+
+        for result in results:
+            ws.append([
+                result.get("timestamp", ""),
+                result.get("category", ""),
+                result.get("query", ""),
+                result.get("expected_output", ""),
+                result.get("actual_output", ""),
+                result.get("context_length", 0),
+                result.get("faithfulness_score", 0.0),
+                result.get("pedagogical_score", 0.0),
+                "PASS" if result.get("test_passed") else "FAIL",
+                result.get("failure_reason", "")
+            ])
+
+        for column in ws.columns:
+            max_length = 0
+            column_letter = column[0].column_letter
+            for cell in column:
+                try:
+                    if len(str(cell.value)) > max_length:
+                        max_length = len(cell.value)
+                except:
+                    pass
+            adjusted_width = min(max_length + 2, 50)
+            ws.column_dimensions[column_letter].width = adjusted_width
+
+        filename = f"test_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
+        wb.save(filename)
+        print(f"\n📊 Test results saved to: {filename}")
+    #[context_metric, faithfulness_metric, answer_relevancy_metric, pedagogical_metric]
     #[context_metric, faithfulness_metric, answer_relevancy_metric, pedagogical_metric]

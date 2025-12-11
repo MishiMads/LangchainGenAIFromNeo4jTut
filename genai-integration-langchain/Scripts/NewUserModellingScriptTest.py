@@ -263,52 +263,132 @@ rag_chain = (
 )
 
 
-# --- 7. RUN FUNCTION ---
-
+# --- 7. CHAT CYCLE FUNCTION ---
 def run_chat_cycle(user_id, user_input):
-    print(f"\n\n--- User '{user_id}': {user_input} ---")
+    """
+    Processes a single chat interaction: analyze, generate response, and log.
 
-    # Step 1: Analyze (What topic is this? Is it an answer?)
-    print(" >> Analyzing input...")
-    metadata = analyze_interaction(user_id, user_input)
+    Args:
+        user_id: The student identifier
+        user_input: The text input from the user
+    """
+    try:
+        # 1. Analyze the interaction
+        metadata = analyze_interaction(user_id, user_input)
 
-    # Step 2: Generate Answer (RAG)
-    print(" >> Generating response...")
-    response = rag_chain.invoke({"question": user_input, "user_id": user_id})
-    print(f"AI Response: {response}")
+        # 2. Generate bot response using RAG
+        bot_response = rag_chain.invoke({
+            "question": user_input,
+            "user_id": user_id
+        })
 
-    # Step 3: Log everything to Neo4j
-    print(" >> Logging to Graph...")
-    log_interaction(neo4j_driver, user_id, user_input, response, metadata)
+        # 3. Log everything to Neo4j
+        log_interaction(neo4j_driver, user_id, user_input, bot_response, metadata)
+
+        print(f"Bot: {bot_response}")
+
+    except Exception as e:
+        print(f"Error in chat cycle: {e}")
 
 
-# --- 8. INTERACTIVE CHAT LOOP ---
+# --- 8. BATCH TEST FUNCTION ---
+def run_batch_test(student_name, question_groups, answers, operations):
+    """
+    Runs a batch of questions and answers for testing purposes.
+
+    Args:
+        student_name: The user_id to use
+        question_groups: Nested list of questions by operation (4 groups of 5 questions)
+        answers: Flat list of all 20 answers
+        operations: List of 4 operation names
+    """
+    print(f"\n{'=' * 60}")
+    print(f"BATCH TEST MODE - Student: {student_name}")
+    print(f"{'=' * 60}\n")
+
+    answer_counter = 0
+
+    for op_index, operation in enumerate(operations):
+        print(f"\n--- OPERATION: {operation} ---")
+
+        for q_index, question in enumerate(question_groups[op_index]):
+            student_answer = answers[answer_counter]
+
+            print(f"\nQ{answer_counter + 1}: {question}")
+
+            # First, bot asks the question
+            run_chat_cycle(student_name, question)
+
+            print(f"Student Answer: {student_answer}")
+
+            # Then, student answers
+            run_chat_cycle(student_name, student_answer)
+
+            answer_counter += 1
+            print(f"Progress: {answer_counter}/{len(answers)}")
+
+    print(f"\n{'=' * 60}")
+    print(f"BATCH TEST COMPLETED - {answer_counter} questions processed")
+    print(f"{'=' * 60}\n")
+
 
 if __name__ == "__main__":
-    user_id = "Jakob"
+    # --- CONFIGURATION: Choose mode ---
+    RUN_MODE = "batch"  # Options: "interactive" or "batch"
 
-    print(f"--- Chat Session Started for {user_id} ---")
+    if RUN_MODE == "batch":
+        # Test data from Test_User_Model_Simpel.py
+        question_groups = [
+            ["Hvad er 3+5?", "Hvad er 7+6?", "Hvad er 12+4?", "Hvad er 9+8?", "Hvad er 15+3?"],
+            ["Hvad er 10 - 4?", "Hvad er 18 - 7?", "Hvad er 9 - 3?", "Hvad er 14 - 5?", "Hvad er 20 - 9?"],
+            ["Hvad er 3*4?", "Hvad er 5*6?", "Hvad er 2*7?", "Hvad er 8*3?", "Hvad er 4*9?"],
+            ["Hvad er 12/3?", "Hvad er 20/4?", "Hvad er 18/2?", "Hvad er 15/5?", "Hvad er 24/6?"]
+        ]
 
+        smartElev = [
+            "8", "13", "16", "17", "18",
+            "6", "12", "6", "9", "11",
+            "12", "30", "14", "24", "36",
+            "4", "5", "9", "4", "4"
+        ]
 
-    print("\nType 'exit', 'quit', or 'q' to end the session.\n")
+        notSmartElev = [
+            "6", "10", "13", "20", "11",
+            "3", "10", "12", "10", "8",
+            "9", "25", "14", "12", "24",
+            "3", "6", "8", "3", "8"
+        ]
 
-    while True:
-        try:
-            user_input = input("You: ")
+        operations = ["Addition", "Subtraktion", "Multiplikation", "Division"]
 
-            if user_input.lower() in ["exit", "quit", "q"]:
-                print("Ending session...")
+        # Choose which student to test
+        TEST_STUDENT = "SmartElev"  # Change to "NotSmartElev" for the other student
+
+        answers = smartElev if TEST_STUDENT == "SmartElev" else notSmartElev
+
+        run_batch_test(TEST_STUDENT, question_groups, answers, operations)
+
+    else:  # interactive mode
+        user_id = "Jakob"
+        print(f"--- Chat Session Started for {user_id} ---")
+        print("\nType 'exit', 'quit', or 'q' to end the session.\n")
+
+        while True:
+            try:
+                user_input = input("You: ")
+
+                if user_input.lower() in ["exit", "quit", "q"]:
+                    print("Ending session...")
+                    break
+
+                if not user_input.strip():
+                    continue
+
+                run_chat_cycle(user_id, user_input)
+
+            except KeyboardInterrupt:
+                print("\nInterrupted by user. Exiting...")
                 break
-
-            if not user_input.strip():
-                continue
-
-            run_chat_cycle(user_id, user_input)
-
-        except KeyboardInterrupt:
-            print("\nInterrupted by user. Exiting...")
-            break
 
     neo4j_driver.close()
     print("\n--- Script Finished ---")
-
