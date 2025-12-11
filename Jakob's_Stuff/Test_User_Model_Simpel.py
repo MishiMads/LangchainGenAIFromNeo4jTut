@@ -17,8 +17,9 @@ load_dotenv()
 
 llm = ChatOpenAI(
     openai_api_key=os.getenv('OPENAI_API_KEY'),
-    model = "gpt-5-mini",
-    model_kwargs={"temperature": 1}
+    model = "gpt-4o",
+    model_kwargs={"temperature": 1},
+    response_format={"type": "json_object"}
 )
 # llm = Ollama(model="llama3.1")
 
@@ -86,70 +87,30 @@ def save_result_to_graph(student_name, operation_name, is_correct):
             """
         session.run(query2)
 
-        print("Saved to graph!")
+        #print("Saved to graph!")
 
 
 
 question_groups = [
-    ["Hvad er 3+5?", "Hvad er 7+6?", "Hvad er 12+4?", "Hvad er 9+8?", "Hvad er 15+3?"], #Addition
-    ["Hvad er 10 - 4?", "Hvad er 18 - 7?", "Hvad er 9 - 3?", "Hvad er 14 - 5?", "Hvad er 20 - 9?"], #Subtraktion
-    ["Hvad er 3*4?", "Hvad er 5*6?", "Hvad er 2*7?", "Hvad er 8*3?", "Hvad er 4*9?"], #Multiplikation
-    ["Hvad er 12/3?", "Hvad er 20/4?", "Hvad er 18/2?", "Hvad er 15/5?", "Hvad er 24/6?"] #Division
+    ["Hvad er 2+3?", "Hvad er 5+5?", "Hvad er 12 + 10?", "Hvad er 17+69?", "Hvad er 96+28?"], #Addition
+    ["Hvad er 2-1?", "Hvad er 8-5?", "Hvad er 10-5?", "Hvad er 72-24?", "Hvad er 114-27?"], #Subtraktion
+    ["Hvad er 2*2?", "Hvad er 4*3?", "Hvad er 10*5?", "Hvad er 12*11?", "Hvad er 9*17?"], #Multiplikation
+    ["Hvad er 4/2?", "Hvad er 9/3?", "Hvad er 12/4?", "Hvad er 60/6?", "Hvad er 52/13?"] #Division
     ]
 
-smartElev = [
-    #Addition
-    "8",
-    "13",
-    "16",
-    "17",
-    "18",
-    #Subtraktion
-    "6",
-    "12", #Forkert med vilje, bare fordi
-    "6",
-    "9",
-    "11",
-    #Multiplikation
-    "12",
-    "30",
-    "14",
-    "24",
-    "36",
-    #Division
-    "4",
-    "5",
-    "9",
-    "4", #Forkert med vilje
-    "4",
-]
+#Elever's svar:
+Elev1 = [5, 10, 22, 84, 124, 1, 3, 5, 48, 87, 4, 12, 50, 131, 121, 2, 3, 3, 10, 4] #19/20
 
-notSmartElev = [
-    #Addition
-    "6",
-    "10",
-    "13",
-    "20",
-    "11", #Rigtigt med vilje
-    #Subtraktion
-    "3",
-    "10",
-    "12",
-    "10",
-    "8",
-    #Multiplikation
-    "9",
-    "25",
-    "14", #Rigtigt med vilje
-    "12",
-    "24",
-    #Division
-    "3",
-    "6",
-    "8",
-    "3", #Rigtigt med vilje
-    "8",
-]
+Elev2 = [5, 10, 22, 80, 104, 1, 3, 5, 56, 98, 4, 12, 50, 54, 67, 2, 3, 4, 5, 17] #11/20
+
+Elev3 = [5, 8, 13, 70, 101, 1, 5, 2, 60, 100, 2, 10, 15, 20, 25, 2, 6, 8, 12, 40] #3/20
+
+Elev4 = [5, 10, 22, 86, 112, 1, 3, 5, 50, 90, 2, 7, 15, 23, 25, 6, 12, 16, 50, 40] #7/20
+
+Elev5 = [5, 10, 22, 86, 124, 1, 3, 5, 48, 87, 4, 12, 20, 100, 97, 2, 3, 3, 20, 13] #15/20
+
+#Egentligt svar:
+Real_Answer = [5, 10, 22, 84, 124, 1, 3, 5, 48, 87, 4, 12, 50, 153, 121, 2, 3, 3, 10, 4]
 
 # #Test if works
 # result_raw = evaluate_answer(smartElev[0], "Addition", question_groups[0][0])
@@ -159,7 +120,7 @@ notSmartElev = [
 # exit()
 
 answerCounter = 0
-student_name = "SmartElev"
+student_name = "Elev5"
 operationCounter = 0
 operations = ["Addition", "Subtraktion", "Multiplikation", "Division"]
 print("We start with: " + operations[operationCounter])
@@ -170,7 +131,7 @@ FIVE_COUNTER = [0, 1, 2, 3, 4] #5
 for operation in operations:
     current_operation = operation
     for n in FIVE_COUNTER:
-        result_raw = evaluate_answer(smartElev[answerCounter], current_operation, question_groups[operationCounter][n])
+        result_raw = evaluate_answer(Elev5[answerCounter], current_operation, question_groups[operationCounter][n])
 
         result = json.loads(result_raw) #Take raw json from evaluate_answer()
         is_correct = result["is_correct"] #Get info about correctness
@@ -178,7 +139,7 @@ for operation in operations:
         print("Question number " + str(answerCounter+1) + ": " + ("Correct" if is_correct else "Wrong"))
 
         answerCounter += 1 #Advance to next question
-        print("Answer nr: " + str(answerCounter))
+        #print("Answer nr: " + str(answerCounter))
 
     operationCounter += 1 #Advance to next operation
     print("Next is: " + operations[operationCounter])
