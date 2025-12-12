@@ -1,0 +1,1776 @@
+C:\Users\jakob\anaconda3\envs\P7_TestClone1\python.exe "C:\Users\jakob\Desktop\Git Repos\LangchainGenAIFromNeo4jTut\Jakob's_Stuff\Manual_KG_RAG_TEST_WORKS.py" 
+
+=== Running Test 1/50 ===
+
+==============================
+📘 Question: Hvad giver 6 + 7?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}, 'operation': {'name': 'Addition'}}
+
+🤖 Model Answer:
+Kan du huske 10'er venner? Hvis vi har 6, hvor mange mere skal vi lægge til for at nå 10? Tænk over det!
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8913513027260851,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question by prompting the student to think about the concept of '10'er venner' instead of providing a direct answer. It encourages critical thinking and reinforces the teaching strategy relevant to the topic. The language is simple and appropriate for the target age group, avoiding complex academic terminology, which aligns well with the evaluation steps."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output is completely aligned with the retrieval context. Great job maintaining this high level of consistency!"
+  }
+}
+
+=== Running Test 2/50 ===
+
+==============================
+📘 Question: Jeg kan ikke huske 7 + 8.
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+
+🤖 Model Answer:
+"Kan du huske 10'er venner? Vi kan tage 7 + 3 = 10 først. Hvor mange ekstra skal vi lægge til for at nå 8?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.9464092541817937,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the student to recall '10'er venner' and guiding them through the addition process. It employs a simple teaching strategy that is suitable for the target age group. The language is clear and appropriate for 7-9 year olds, avoiding complex terms while still being instructive."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context, indicating complete alignment and accuracy."
+  }
+}
+
+=== Running Test 3/50 ===
+
+==============================
+📘 Question: Hvad giver 6 + 5?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}, 'o': {'name': 'Addition'}}
+
+🤖 Model Answer:
+"Lad os tænke på 10'er venner. Hvordan kan du få 6 til at blive 10? Hvor mange mere skal du lægge til?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8664330473815056,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to lead the learner to the answer rather than providing it directly, which aligns well with the evaluation steps. It references a suitable teaching strategy ('10'er venner'), helping the child relate to familiar concepts. Additionally, the language is simple and appropriate for the target age group, avoiding overly complex terminology, which supports comprehension for 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output fully aligns with the retrieval context."
+  }
+}
+
+=== Running Test 4/50 ===
+
+==============================
+📘 Question: Hvad er 8 plus 5?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}, 'operation': {'name': 'Addition'}}
+
+🤖 Model Answer:
+Kan vi bruge 10'er venner her? Hvis vi tager 5 fra 8, har vi 3 tilbage. Så hvad får vi, når vi lægger de 3 til 10?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8886764133744325,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question by asking if 10'er venner can be utilized, encouraging the child to think critically about the problem. It also provides a straightforward explanation that aligns with appropriate teaching strategies for the target age group. The language is simple and accessible, with no complex academic terminology, making it suitable for 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions, indicating the actual output perfectly aligns with the retrieval context."
+  }
+}
+
+=== Running Test 5/50 ===
+
+==============================
+📘 Question: Hvad er 9 plus 6?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+Kan du bruge 10'er venner? Hvis vi tager 9 og ligger 1 til, får vi 10. Hvad er så 5 mere?
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8375744393696666,
+    "passed": true,
+    "reason": "The response incorporates guiding questions to engage the learner, asking if they can use '10'er venner' and providing a relatable example. It references a specific teaching strategy effectively. The language is simple and appropriate for the target age group, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions in the actual output, indicating perfect alignment with the retrieval context. This consistency is commendable!"
+  }
+}
+
+=== Running Test 6/50 ===
+
+==============================
+📘 Question: Hvad er 15 minus 5?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"Kan du tælle tilbage fra 15? Hvis vi starter med 15 og tæller 5 skridt tilbage, hvad vil vi så ende med?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8901740191785134,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the learner to count back from 15 and think critically about the sequence. It avoids complex terminology, using simple phrases suitable for 7-9 year olds. However, it does not reference a specific teaching strategy, which slightly lowers the score."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+  }
+}
+
+=== Running Test 7/50 ===
+
+==============================
+📘 Question: Hvordan regner jeg 12 minus 9?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'm': {'name': 'Pluspar'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'm': {'name': "10'er venner"}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'm': {'name': 'Tabelremser'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'm': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+Tænk på 12 som noget, vi kan dele op. Hvis du tager 9 fra 12, hvor mange har du tilbage? Prøv at tælle ned fra 12 med 9 trin. Hvad får du?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8019633294936188,
+    "passed": true,
+    "reason": "The response uses guiding questions effectively by prompting the student to think about subtraction and counting down, which encourages engagement. However, it lacks a specific teaching strategy reference such as 10'er venner or other techniques aimed at the target age group, slightly limiting its effectiveness. The language used is simple and suitable for 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 0.6666666666666666,
+    "passed": true,
+    "reason": "The score is 0.67 because the actual output incorrectly suggests that 12 can be divided up according to the Regnestrategier, while it should have stated that 12 does not relate to the stated strategies."
+  }
+}
+
+=== Running Test 8/50 ===
+
+==============================
+📘 Question: Hvad er 14 minus 7?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+Kan du tænke på, hvor mange 7 der er inaktivt i 14? Hvis du tager 7 fra 14, hvor mange har du så tilbage? Prøv at tælle ned fra 14!
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8225878260636226,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to prompt the learner to think critically about the problem of subtracting 7 from 14. It encourages active engagement through phrases like 'Kan du t\u00e6nke p\u00e5' and 'Pr\u00f8v at t\u00e6lle ned'. The language is simple and accessible for the target age group, avoiding complex terminology. However, it could have explicitly mentioned a specific teaching strategy for full alignment."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+  }
+}
+
+=== Running Test 9/50 ===
+
+==============================
+📘 Question: Hvad er 3 gange 2?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}, 'o': {'name': 'Multiplikation'}}
+
+🤖 Model Answer:
+Lad os tælle med grupper! Hvis du har 3 grupper med 2 i hver, hvor mange har du så i alt? Prøv at tælle dem sammen!
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8334439328031238,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question by prompting the student to count groups and sum them together, rather than providing a direct answer. This encourages critical thinking. It also employs an appropriate teaching strategy, focusing on grouping, which is relevant for 7-9 year olds. However, the language could be slightly simpler, as phrases like 't\u00e6lle med grupper' might still be complex for some learners in this age range."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context, indicating perfect alignment and faithfulness."
+  }
+}
+
+=== Running Test 10/50 ===
+
+==============================
+📘 Question: Hvad er 2 gange 5?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Vi kan bruge dobbelt-op til at finde ud af svaret! Hvis 2 gange 5 betyder, at vi har 2 grupper med 5 i hver, hvad ville 2 gange 2 være, og hvordan kan du bruge det til at finde 2 gange 5?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.9,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to prompt the learner to think critically about multiplication, rather than providing direct answers. It references the teaching strategy 'dobbelt-op', which is appropriate for the context. Additionally, the language is simple and suitable for the target age group, making it accessible for 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output incorrectly implies a relationship between the two mathematical expressions, '2 gange 2' and '2 gange 5', which are unrelated multiplications according to the retrieval context."
+  }
+}
+
+=== Running Test 11/50 ===
+
+==============================
+📘 Question: Hvad er 10 gange 2?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+Kan du huske, at at gange med 10 er det samme som at tilføje et 0? Så hvis du har 2, og du ganger det med 10, hvad får du så, hvis du tilføjer 0 til 2?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8216898430419273,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to help the student engage with the concept of multiplying by 10. It simplifies the explanation by relating it to the action of adding a zero, making it accessible for the target age group. While it doesn't explicitly reference a particular teaching strategy, the use of a question format encourages critical thinking. The language is appropriate and avoids overly complex terms, adhering well to the evaluation steps."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output incorrectly suggests that adding a zero and multiplying by ten are equivalent, contradicting the retrieval context that explains how multiplication significantly changes the value while addition does not."
+  }
+}
+
+=== Running Test 12/50 ===
+
+==============================
+📘 Question: Hvad er det halve af 10?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Når vi skal finde det halve af 10, kan vi tænke på, hvad vi får, hvis vi deler 10 op i to lige store grupper. Hvad er der i hver gruppe, når du deler 10?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8407947499028856,
+    "passed": true,
+    "reason": "The response uses a guiding question effectively, prompting the student to think about dividing 10 into two equal groups, which aligns with the first evaluation step. The language is simple and appropriate for 7-9 year olds, avoiding complex terminology. However, it does not mention a specific teaching strategy, which would have strengthened the evaluation."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+  }
+}
+
+=== Running Test 13/50 ===
+
+==============================
+📘 Question: Hvad er det halve af 8?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Kan du huske, hvordan vi finder halvdelen? Hvis du deler 8 op i to lige store dele, hvor mange vil der så være i hver del?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.9189268276279803,
+    "passed": true,
+    "reason": "The response effectively employs guiding questions by asking the student to recall how to find half of a number, which encourages critical thinking. It refrains from using complex academic terminology, instead using simple language suitable for 7-9 year olds, making the concept accessible. This aligns perfectly with the evaluation steps."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating perfect alignment between the actual output and the retrieval context!"
+  }
+}
+
+=== Running Test 14/50 ===
+
+==============================
+📘 Question: Hvad er 6 delt med 2?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Når vi deler, kan vi tænke på det som at finde, hvor mange gange 2 kan være i 6. Kan du tælle, hvor mange 2'ere vi kan finde i 6?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8159980080638889,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question by prompting the learner to count how many '2's can be found in '6', which aligns well with the first evaluation step. However, it does not explicitly mention a specific teaching strategy like '10'er venner' or other related methods, which is a noted shortcoming. The language used is simple and appropriate for the target age group, making it accessible for 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions between the actual output and the information presented in the retrieval context. Everything aligns perfectly!"
+  }
+}
+
+=== Running Test 15/50 ===
+
+==============================
+📘 Question: Hvad er 46 + 38?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}, 'operation': {'name': 'Addition'}}
+
+🤖 Model Answer:
+Vi kan først runde tallene til nærmeste 10'er for at gøre det lettere. Hvad bliver 46, hvis vi runder op til 50? Og hvad med 38, hvis vi runder op til 40? Hvor meget bliver det?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.803546600447428,
+    "passed": true,
+    "reason": "The response effectively guides the learner by posing questions about rounding numbers, which encourages engagement and critical thinking. It also appropriately references the '10'er venner' strategy by rounding to the nearest ten. The language used is simple and accessible for 7-9 year olds, avoiding overly complex terminology. However, it could improve by explicitly mentioning a specific teaching strategy or framework to strengthen the alignment further."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions, indicating that the actual output completely aligns with the retrieval context."
+  }
+}
+
+=== Running Test 16/50 ===
+
+==============================
+📘 Question: Hvad er 20 minus 5?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Okay, lad os tænke på 10'er venner. Hvis du har 20 og tager 5 væk, hvor mange har du så? Kan du finde ud af hvor mange 10'er venner der er i 20?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8432456176243427,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to lead the learner towards finding the answer rather than giving a direct solution. It references the 10'er venner teaching strategy, which is suitable for the target age group, encouraging a conceptual understanding of subtraction. The language used is simple and accessible for 7-9 year olds, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+  }
+}
+
+=== Running Test 17/50 ===
+
+==============================
+📘 Question: Hvordan plusser jeg store tal?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}, 'o': {'name': 'Addition'}}
+
+🤖 Model Answer:
+"Hvordan kan du dele de store tal op i mindre dele? Måske kan du finde nogle 10'er venner? Prøv at tænke på, hvordan du kan lægge et tal op til 10, og så lægge resten til bagefter!"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.981386672360941,
+    "passed": true,
+    "reason": "The response effectively utilizes guiding questions by prompting the learner to think about dividing large numbers into smaller parts. It references the teaching strategy of '10'er venner' appropriately, aligning well with the evaluation steps. Additionally, the language is clear and suitable for the target age group, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context."
+  }
+}
+
+=== Running Test 18/50 ===
+
+==============================
+📘 Question: Hvad betyder 5 i 53?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+
+🤖 Model Answer:
+"5'eren i 53 betyder, at den står for 50. Den er i tiers plads, så vi kan sige, at 5 er 5 tiere. Hvad ville 5 være, hvis den stod alene?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.765352829755569,
+    "passed": true,
+    "reason": "The response utilizes a guiding question by asking, 'Hvad ville 5 v\u00e6re, hvis den stod alene?', encouraging critical thinking rather than providing a direct answer. It references the concept of 'tiers', which aligns with a teaching strategy appropriate for the age group. However, while the language is generally accessible, the explanation of '5'eren i 53' could be simplified further to ensure comprehension among 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output inaccurately interprets the representation of '5' in the number 53, leading to a misstatement about its value, thus causing a contradiction with the retrieval context."
+  }
+}
+
+=== Running Test 19/50 ===
+
+==============================
+📘 Question: Hvad er 10 + 2?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+Kan du huske 10'er venner? 10 + 0 = 10. Hvor mange mere skal du lægge til for at få 10 + 2?
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8593519624812009,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by asking the child to recall the concept of '10'er venner' and leads them through a problem, encouraging them to think through the answer. It also employs simple language suitable for the 7-9 year age group, avoiding complex terminology and making the teaching strategy clear and accessible."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the information presented in the retrieval context. Great job on maintaining accuracy!"
+  }
+}
+
+=== Running Test 20/50 ===
+
+==============================
+📘 Question: Hvad skal jeg bruge en tallinje til?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'r2': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'r2': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'r2': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'r2': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'r2': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+
+🤖 Model Answer:
+"En tallinje kan hjælpe dig med at se, hvordan tal hænger sammen. Du kan bruge den til at tælle, finde forskellen mellem tal eller se, hvor meget du mangler for at nå et bestemt tal. Hvordan kunne du bruge den til at finde ud af, hvad 5 + 3 er?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8033878616086936,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question to promote critical thinking, asking how a number line can help find the result of 5 + 3. It also introduces the concept of a number line in a straightforward manner that aligns with the understanding of 7-9 year olds, avoiding complex academic language. However, while the response implies a teaching strategy, it does not explicitly reference one like 'tier-venner' or 'dobbelt-op', which limits its full alignment with all evaluation steps."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions in the actual output; it perfectly aligns with the information presented in the retrieval context."
+  }
+}
+
+=== Running Test 21/50 ===
+
+==============================
+📘 Question: Hvordan regner jeg 15–6?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Vi kan bruge 10'er venner her! Tænk på, hvordan du kan nå 10 fra 15. Hvor meget skal du trække fra 15 for at nå 10, og hvad er resten, når du trækker det fra 6?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8584527076456403,
+    "passed": true,
+    "reason": "The response effectively utilizes the '10'er venner' strategy while encouraging critical thinking through guiding questions about subtraction. The language is simple and suitable for 7-9 year olds, avoiding complex terminology, which makes it accessible for the target age group."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output is fully aligned with the retrieval context. Great job maintaining consistency!"
+  }
+}
+
+=== Running Test 22/50 ===
+
+==============================
+📘 Question: Er det forkert at tælle sig frem?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+
+🤖 Model Answer:
+Det er ikke forkert at tælle sig frem! Tælle på fingrene kan være en god måde at hjælpe dig med at forstå tal og regnestykker. Kan du tænke på et eksempel, hvor det kan hjælpe dig?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8117305935722421,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question by asking the student to think of an example where counting on fingers is helpful, which aligns well with the first evaluation step. It introduces a relevant teaching strategy by suggesting counting on fingers, which is suitable for the target age group. The language used is simple and accessible for 7-9 year olds, avoiding complex academic terminology while still encouraging the child's engagement and thought process."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found, indicating that the actual output perfectly aligns with the retrieval context."
+  }
+}
+
+=== Running Test 23/50 ===
+
+==============================
+📘 Question: Hvorfor hedder det tre-hundrede?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'm': {'name': 'Pluspar'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'm': {'name': "10'er venner"}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'm': {'name': 'Tabelremser'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'm': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"Godt spørgsmål! Når vi siger 'tre-hundrede', betyder det, at vi har 3 grupper af 100. Kan du tælle, hvor mange hundrede der er i andre tal?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8096114390514598,
+    "passed": true,
+    "reason": "The response effectively employs a guiding question, encouraging engagement rather than simply providing the answer. The explanation of 'tre-hundrede' is clear and suitable for the target age group, using simple language that children in grades 7-9 can understand. However, it could have referenced a specific teaching strategy to enhance alignment with the evaluation criteria."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context, indicating a perfect alignment in the information presented."
+  }
+}
+
+=== Running Test 24/50 ===
+
+==============================
+📘 Question: Hvad giver 48 + 26?
+📚 Category: Fleksible Tænkestrategier (Thinking and Number Sense)
+
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}, 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}, 'operation': {'name': 'Addition'}}
+
+🤖 Model Answer:
+Lad os bruge 10'er venner til at gøre det nemmere! Først kan vi tage 48 og se, hvor mange vi skal lægge til for at komme til 50. Hvor meget skal vi lægge til 48 for at få 50?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.836390716276191,
+    "passed": true,
+    "reason": "The response effectively uses the teaching strategy of '10'er venner' by guiding the student to think about rounding 48 to 50. This aligns well with the evaluation steps, as it encourages the student to think critically rather than providing a direct answer. Additionally, the language used is simple and appropriate for 7-9 year olds, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output fully aligns with and accurately reflects the information provided in the retrieval context."
+  }
+}
+
+=== Running Test 25/50 ===
+
+==============================
+📘 Question: Hvad er forskellen på 7 og 10?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"Hvordan kan vi finde ud af, hvad 7 mangler for at blive 10? Kan du tælle op fra 7 til 10? Hvor mange tal skal vi lægge til?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.877593885046626,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by asking how to find out what 7 needs to become 10 and prompting the learner to count up from 7. This approach encourages active engagement and critical thinking. Additionally, the language is simple and suitable for 7-9 year olds, avoiding overly complex academic terminology. The response could be slightly improved by explicitly referencing a teaching strategy like 'tier-venner' for further alignment."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, which indicates that the actual output is perfectly aligned with the retrieval context."
+  }
+}
+
+=== Running Test 26/50 ===
+
+==============================
+📘 Question: Hvad er 4 gange 3?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+Kan du huske, at gangestykker kan tænkes som addition? Hvis vi siger 4 gange 3, så betyder det, at vi har 4 grupper af 3. Hvor meget bliver det, hvis vi lægger 3 til sig selv 4 gange?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8370671132527943,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the student to think about the relationship between multiplication and addition. It aligns well with teaching strategies, as it hints at the idea of grouping, which is appropriate for the age group. The language is simple and clear, avoiding complex terminology, making it accessible for 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 0.6666666666666666,
+    "passed": true,
+    "reason": "The score is 0.67 because the actual output misinterprets the question about adding 3 to itself 4 times, suggesting a direct mathematical claim that does not clarify the link to multiplication, contrary to standard terminology."
+  }
+}
+
+=== Running Test 27/50 ===
+
+==============================
+📘 Question: Kan du 5-tabellen?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+Kan du huske tabelremserne? Lad os starte med at tælle: 5, 10, 15, 20. Hvad kommer efter 20?
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8151055028152634,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question by asking what comes after 20, encouraging the child to think rather than providing a direct answer. It also employs a counting strategy that is appropriate for the target age group, making it relatable and simple. The language used is straightforward and suitable for 7-9 year olds, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found, indicating complete alignment between the actual output and the retrieval context."
+  }
+}
+
+=== Running Test 28/50 ===
+
+==============================
+📘 Question: Hvordan deler jeg 12 med 3?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}, 'operation': {'name': 'Division'}}
+
+🤖 Model Answer:
+Kan du tænke på at dele 12 op i 3 lige store grupper? Hvor mange vil der være i hver gruppe, hvis du fordeler dem ligeligt? Prøv at tælle, hvordan du kan opdele de 12 ting!
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8641849219636993,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the student to think about dividing 12 into 3 equal groups, encouraging exploration rather than providing a direct answer. It also employs simple language appropriate for 7-9 year olds without complex terminology, facilitating understanding. Although a specific teaching strategy like 'tier-venner' is not mentioned, the overall approach aligns with engaging inquiry-based learning."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output incorrectly states that 12 can be divided into 3 groups with each containing 4 elements, which contradicts the context that specifies each group would contain 4 elements, indicating a misunderstanding of division."
+  }
+}
+
+=== Running Test 29/50 ===
+
+==============================
+📘 Question: Jeg har 8 æbler og vi er 4 børn.
+📚 Category: Tællestrategier (Counting & Concrete)
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Hvor mange æbler får hvert barn, hvis vi deler dem ligeligt? Prøv at tænke på, hvordan du kan dele 8 æbler i 4 grupper. Hvad får du, hvis hver gruppe får lige mange æbler?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.9079602401969996,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to lead the student towards understanding how to divide the apples, which aligns well with the first evaluation step. It encourages critical thinking by prompting the student to consider how to divide 8 apples into 4 groups. The language used is clear and simple, avoiding complex terminology, which is appropriate for the target age group. However, the response does not reference a specific teaching strategy, which is the only area where it could improve."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context!"
+  }
+}
+
+=== Running Test 30/50 ===
+
+==============================
+📘 Question: Vi er 3 børn der skal dele 9 sodavand.
+📚 Category: Tællestrategier (Counting & Concrete)
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+Hvordan kan vi dele 9 sodavand ligeligt mellem 3 børn? Tænk på, hvor mange sodavand hver person ville få, hvis vi deler dem op. Kan du finde ud af, hvad 9 delt med 3 er?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8561813251163773,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to engage the child, asking them to think about division by considering how many sodas each child would receive. However, it lacks a reference to an explicit teaching strategy like '10'er venner' or 'tier-venner', which could enhance the instructional approach. The language is clear and appropriate for the intended age group, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions, indicating that the actual output is entirely faithful to the retrieval context."
+  }
+}
+
+=== Running Test 31/50 ===
+
+==============================
+📘 Question: Hvordan lægger jeg 4 til 32?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+ Context retrieved: 
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'p': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'p': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'p': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'p': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'p': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+
+🤖 Model Answer:
+Vi kan bruge 10'er venner her! Tænk på, hvordan vi kan gøre 32 til 40 ved at lægge 8 til. Hvad er så 4 plus de 8?
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8452981483171154,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the child to think about how to reach 40 by adding 8 to 32, which aligns well with encouraging critical thinking. It references an appropriate teaching strategy ('10'er venner') relevant for the age group. The language is simple and appropriate for 7-9 year olds, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+  }
+}
+
+=== Running Test 32/50 ===
+
+==============================
+📘 Question: Hvad kommer efter 29?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Hvis vi tæller op fra 29, hvad kommer så lige efter? Prøv at tælle videre: 30, 31, hvad tænker du?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8907266861519361,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the learner to continue counting after 29, which encourages engagement and active participation. It avoids complex terminology, using simple language suited for 7-9 year olds. This aligns well with the evaluation criteria."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found, indicating the actual output aligns perfectly with the retrieval context."
+  }
+}
+
+=== Running Test 33/50 ===
+
+==============================
+📘 Question: Hvordan tæller jeg baglæns fra 10?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"Prøv at tælle 10, 9, 8... Hvad er det næste tal, når du tager 1 væk? Kan du også bruge dine fingre til at hjælpe dig med at tælle?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8854038600274119,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions, prompting the learner to think critically about the counting process. It encourages the child to engage with the task by asking what the next number is and suggesting the use of fingers for assistance. However, it does not explicitly reference any specific teaching strategy such as '10'er venner', which would have strengthened the alignment with the evaluation steps."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating complete alignment between the actual output and the retrieval context."
+  }
+}
+
+=== Running Test 34/50 ===
+
+==============================
+📘 Question: Kan man måle med fødder?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'm': {'name': 'Pluspar'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'm': {'name': "10'er venner"}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'm': {'name': 'Tabelremser'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'm': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+Ja, man kan bruge fødder til at måle! Tænk på, hvor mange fødder lang noget er. Kan du forestille dig, hvordan du kunne bruge dine egne fødder som målestok?
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8077621102696305,
+    "passed": true,
+    "reason": "The response effectively engages the learner by using guiding questions, prompting them to think about how to use their own feet as a measurement tool. This aligns well with the first evaluation step. While it does not explicitly reference a specific teaching strategy, the use of questions serves as an indirect method of encouragement. Additionally, the language used is simple and suitable for 7-9 year olds, making it accessible and appropriate for the target age group."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found, indicating that the actual output perfectly aligns with the retrieval context."
+  }
+}
+
+=== Running Test 35/50 ===
+
+==============================
+📘 Question: Hvad er forskellen på 12 og 8?
+📚 Category: Tællestrategier (Counting & Concrete)
+
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+For at finde forskellen mellem 12 og 8, kan vi tænke på, hvor mange 2'er venner, vi har. Hvad skal vi lægge til 8 for at få 10? Og hvor mange 2'er venner skal vi lægge til for at nå 12?
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.81304082475743,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to prompt critical thinking rather than providing direct answers, which aligns well with the first evaluation step. It also incorporates the teaching strategy of '2'er venner', making it suitable for the target age group. However, there could be a slight improvement in the clarity of the questions, as they may be slightly complex for some 7-9 year olds, which affects the overall score just a bit."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output is fully aligned with the retrieval context."
+  }
+}
+
+=== Running Test 36/50 ===
+
+==============================
+📘 Question: Hvad giver 10 minus 3?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'm': {'name': 'Pluspar'}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'm': {'name': "10'er venner"}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'm': {'name': 'Tabelremser'}, 'operation': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'm': {'name': 'Opdele fysiske ting'}, 'operation': {'name': 'Subtraktion'}}
+
+🤖 Model Answer:
+Kan du huske 10'er venner? Hvis vi har 10 og tager 3 fra, hvor mange har vi så tilbage? Tænk på, hvor mange der mangler for at nå op til 10.
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8722432671913619,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to lead the learner to find the answer, specifically asking about 10'er venner. It doesn't give a direct answer but prompts the child to think critically. The language is simple and appropriate for the age group, avoiding complex academic terminology. However, while it references an appropriate teaching strategy (10'er venner), it could further clarify the strategy for enhanced understanding."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output fully aligns with the retrieval context."
+  }
+}
+
+=== Running Test 37/50 ===
+
+==============================
+📘 Question: Hvad betyder 'gange'?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Gange" betyder, at vi tager et tal og lægger det sammen med sig selv flere gange. For eksempel, hvis vi ganger 3 med 2, så tager vi 3 og lægger det sammen med sig selv 2 gange: 3 + 3. Hvor mange får vi så?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.7715063653971094,
+    "passed": true,
+    "reason": "The response does not use guiding questions or hints, providing a direct explanation of multiplication. However, it employs a teaching strategy by incorporating an example, which effectively aids comprehension. The language used is simple and appropriate for the 7-9 age group, avoiding overly complex terminology. The only shortcoming is the lack of a follow-up question to engage the learner further."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output incorrectly describes the result of a multiplication operation as an addition operation, leading to a misunderstanding of basic arithmetic principles."
+  }
+}
+
+=== Running Test 38/50 ===
+
+==============================
+📘 Question: Hvad er 0 gange 5?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Når vi ganger med 0, betyder det, at vi ikke har noget at lægge til. Kan du prøve at tænke på, hvor mange grupper der er, hvis der ikke er nogen ting i dem? Hvor mange vil vi så have i alt?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8757038101862131,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to prompt the child to think critically about multiplication by zero, encouraging them to explore the concept rather than simply providing a direct answer. Additionally, the language is simple and accessible for the target age group, avoiding complex terminology while maintaining clarity in communication."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found, indicating perfect alignment between the actual output and the retrieval context. Keep up the great work!"
+  }
+}
+
+=== Running Test 39/50 ===
+
+==============================
+📘 Question: Hvad er 1 gange 7?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+"Har du hørt om multiplikation som gentagelse? 1 gange 7 betyder, at du har 1 gruppe med 7 i. Hvad får du, hvis du kun har én gruppe med 7?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8100319587941858,
+    "passed": true,
+    "reason": "The response uses guiding questions effectively by prompting the learner to think about multiplication in terms of groups, which aligns well with the evaluation steps. The mention of '1 gruppe med 7' is appropriate for the target age group, ensuring that the language is simple and accessible. However, the response could have explicitly referenced a teaching strategy to strengthen its educational framework."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context, indicating complete alignment and faithfulness."
+  }
+}
+
+=== Running Test 40/50 ===
+
+==============================
+📘 Question: Hvad er kvadratet på 2?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"Kan du huske, at kvadratet af et tal betyder at gange tallet med sig selv? Hvad får du, hvis du ganger 2 med 2?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8518900857058224,
+    "passed": true,
+    "reason": "The response effectively employs guiding questions by asking if the user remembers the concept of squaring a number and encourages engagement with a follow-up question about multiplying 2 by 2. It uses simple language appropriate for the target age group without overly complex terminology. However, it lacks a specific teaching strategy reference, which could enhance alignment with the evaluation criteria."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found, indicating that the actual output aligns perfectly with the retrieval context. Keep up the excellent work!"
+  }
+}
+
+=== Running Test 41/50 ===
+
+==============================
+📘 Question: Jeg har 3 poser med 4 boller.
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'operation': {'name': 'Multiplikation'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'operation': {'name': 'Addition'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'operation': {'name': 'Subtraktion'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'operation': {'name': 'Division'}}
+
+🤖 Model Answer:
+"Hvor mange boller har du i alt? Du kan tænke på, at 3 poser med 4 boller i hver kan skrives som 3 x 4. Kan du tælle op?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8423051830832305,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by asking 'Hvor mange boller har du i alt?' and encourages the learner to think critically about the problem with the hint regarding multiplication. It introduces a teaching strategy by referencing the multiplication format '3 x 4', which is appropriate for the targeted age group. The language remains simple and accessible, avoiding overly complex terminology, making it suitable for 7-9 year olds."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found in the actual output when compared to the retrieval context. Everything aligns perfectly!"
+  }
+}
+
+=== Running Test 42/50 ===
+
+==============================
+📘 Question: Hvad er 10 delt med 2?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+For at finde ud af, hvad 10 delt med 2 er, kan vi tænke på det som at dele 10 op i 2 lige store dele. Hvor mange penge får du, hvis du deler 10 kr. mellem 2 venner? Tæl efter og se, hvor meget hver får!
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8415776489933897,
+    "passed": true,
+    "reason": "The response utilizes a guiding question to prompt the child to think actively about the division problem, which aligns well with the first evaluation step. It also employs a relatable real-life context (sharing money among friends) to explain the concept, enhancing understanding for young learners. However, while the language is mostly simple, it could be slightly more explicit about the teaching strategy used, such as explicitly naming a specific method like '10'er venner'. Overall, it's effective but lacks a bit of clarity regarding the teaching strategy."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output incorrectly states that 10 divided by 2 equals 5, while the retrieval context correctly identifies the factual result as 5."
+  }
+}
+
+=== Running Test 43/50 ===
+
+==============================
+📘 Question: Kan man dele 5 med 2?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}, 'operation': {'name': 'Division'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}, 'operation': {'name': 'Division'}}
+
+🤖 Model Answer:
+"Ja, du kan dele 5 med 2! Måske kan du tænke på at opdele 5 fysiske ting, som æbler. Hvis du har 5 æbler og vil dele dem med 2 personer, hvor mange får hver? Kan du lave det i grupper?"
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8286806588097685,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the learner to think about physical objects and how to group them, which encourages engagement. However, it could improve by explicitly referencing a teaching strategy such as '10'er venner' or similar. The language is simple and appropriate for 7-9 year olds, making it accessible and clear."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions found, indicating that the actual output is fully aligned with the retrieval context. Great job maintaining consistency!"
+  }
+}
+
+=== Running Test 44/50 ===
+
+==============================
+📘 Question: Hvad er 8 minus 0?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+Error in retrieving context
+
+ Context retrieved: 
+
+
+🤖 Model Answer:
+Hvordan kan du tænke over at trække 0 fra et tal? Hvis du har 8, og der ikke kommer noget væk, hvor mange har du så tilbage?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8387626787225834,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to encourage critical thinking about the concept of subtracting 0 from a number, which aligns well with the first evaluation step. It prompts the student to reflect on an example (starting with 8) and answer the implied question, fostering engagement. However, it doesn't reference a specific teaching strategy like 'tier-venner,' which would demonstrate a deeper alignment with the relevant pedagogical practices. The language used is simple and appropriate for the age group, avoiding complex terminology."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output incorrectly asserts that subtracting 0 from a number changes its value, while the retrieval context states that it remains the same, making the claim misleading."
+  }
+}
+
+=== Running Test 45/50 ===
+
+==============================
+📘 Question: Hvad betyder minus?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 's': {'name': 'Overslagsregning'}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 's': {'name': 'Hovedregning'}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 's': {'name': 'Beregninger med digitale værktøjer'}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 's': {'name': 'Regning med skriftlige notater'}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 's': {'name': 'Tælle på fingrer'}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 's': {'name': 'Pluspar'}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 's': {'name': "10'er venner"}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 's': {'name': 'Tabelremser'}, 'o': {'name': 'Division'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}, 'o': {'name': 'Multiplikation'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}, 'o': {'name': 'Addition'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}, 'o': {'name': 'Subtraktion'}}
+{'t': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 's': {'name': 'Opdele fysiske ting'}, 'o': {'name': 'Division'}}
+
+🤖 Model Answer:
+Minus betyder at tage noget væk. Kan du tænke på, hvad der sker, når du har 5 æbler og giver 2 væk? Hvor mange æbler har du så tilbage?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.860908536610696,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions by prompting the learner to think about the scenario with apples, which encourages active engagement. It also avoids complex terminology and uses simple language appropriate for the target age group. However, it lacks a specific teaching strategy reference, such as 'tier-venner,' which would enhance its instructional clarity."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output faithfully matches the retrieval context. Great job maintaining coherence!"
+  }
+}
+
+=== Running Test 46/50 ===
+
+==============================
+📘 Question: Hvor mange er vi hvis Søren går hjem?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'm': {'name': 'Pluspar'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'm': {'name': "10'er venner"}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'm': {'name': 'Tabelremser'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'm': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"Hvor mange er vi nu? Kan du tælle, hvor mange der er tilbage, hvis Søren går hjem? Tænk over, hvor mange vi var først, og så træk én fra!"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8883633415299059,
+    "passed": true,
+    "reason": "The response uses guiding questions effectively, prompting the child to think critically about the problem (e.g., 'Hvor mange er vi nu?' and 'Kan du t\u00e6lle?'). It encourages engagement without providing direct answers. The language is simple and age-appropriate, avoiding complex academic terminology, making it suitable for 7-9 year olds. However, it does not explicitly reference any specific teaching strategy like '10'er venner,' which slightly affects the score."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output perfectly aligns with the retrieval context. Great job maintaining coherence!"
+  }
+}
+
+=== Running Test 47/50 ===
+
+==============================
+📘 Question: Hvad betyder 'i alt'?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'm': {'name': 'Pluspar'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'm': {'name': "10'er venner"}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'm': {'name': 'Tabelremser'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'm': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"I alt" betyder, hvor mange der er samlet. Hvis du for eksempel har 3 æbler og får 2 mere, hvad bliver der så 'i alt'?
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8141423619242643,
+    "passed": true,
+    "reason": "The response effectively uses a guiding question by prompting the learner to think about the total number of apples, which engages them in problem-solving. It also employs simple language that is appropriate for 7-9 year olds, avoiding complex academic terminology. However, it does not reference any specific teaching strategy like '10'er venner' or 'tier-venner', which would strengthen its alignment with the evaluation steps."
+  },
+  "faithfulness": {
+    "score": 0.5,
+    "passed": true,
+    "reason": "The score is 0.50 because the actual output's interpretation of \"I alt\" contradicts the retrieval context by not accurately reflecting its definition as relating to totals or sums, which does not align with the phrase 'where many there are gathered'."
+  }
+}
+
+=== Running Test 48/50 ===
+
+==============================
+📘 Question: Hvad er forskellen på 10 kr. og 10 børn?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}, 's': ({'name': 'Overslagsregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}, 's': ({'name': 'Hovedregning'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}, 's': ({'name': 'Beregninger med digitale værktøjer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}, 's': ({'name': 'Regning med skriftlige notater'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Multiplikation'}), 'o': {'name': 'Multiplikation'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Addition'}), 'o': {'name': 'Addition'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Subtraktion'}), 'o': {'name': 'Subtraktion'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}, 's': ({'name': 'Tælle på fingrer'}, 'CAN_BE_USED_FOR', {'name': 'Division'}), 'o': {'name': 'Division'}}
+
+🤖 Model Answer:
+"Wow, det er et sjovt spørgsmål! Tænk på det sådan her: 10 kr. er penge, og de kan bruges til at købe ting. Men 10 børn er en gruppe af mennesker. Kan du komme på, hvad man kan gøre med hver af dem?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.8031840417934273,
+    "passed": true,
+    "reason": "The response effectively uses guiding questions to engage the learner rather than providing a direct answer, encouraging critical thinking. It also utilizes simple language appropriate for 7-9 year olds, avoiding complex terminology. However, it could improve by referencing a specific teaching strategy, like 'tier-venner', to enhance its educational framework."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output perfectly aligns with the retrieval context."
+  }
+}
+
+=== Running Test 49/50 ===
+
+==============================
+📘 Question: Hvad er størst: 1 m eller 1 cm?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'strategy': {'name': 'Overslagsregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'strategy': {'name': 'Hovedregning'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'strategy': {'name': 'Beregninger med digitale værktøjer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'strategy': {'name': 'Regning med skriftlige notater'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'strategy': {'name': 'Tælle på fingrer'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'strategy': {'name': 'Pluspar'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'strategy': {'name': "10'er venner"}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'strategy': {'name': 'Tabelremser'}}
+{'topic': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'strategy': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+"Hvad tror du, der er forskel på 1 meter og 1 centimeter? Hvis vi tænker på, hvor mange centimeter der er i en meter, kan du så finde ud af, hvilken der er størst?"
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.91944601738857,
+    "passed": true,
+    "reason": "The response successfully employs guiding questions to encourage critical thinking instead of providing a direct answer. It asks the student to consider the difference between meters and centimeters while prompting them to recall how many centimeters make up a meter, which aligns perfectly with the evaluation steps. The language used is simple and appropriate for 7-9 year olds, avoiding complex terminology and making the concepts accessible."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions in the actual output, indicating perfect alignment with the retrieval context."
+  }
+}
+
+=== Running Test 50/50 ===
+
+==============================
+📘 Question: Hvad skal jeg bruge matematik til?
+📚 Category: Viden og Anvendelse (Knowledge, Retrieval and Context
+
+ Context retrieved: 
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Overslagsregning'}), 'm': {'name': 'Overslagsregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Hovedregning'}), 'm': {'name': 'Hovedregning'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Beregninger med digitale værktøjer'}), 'm': {'name': 'Beregninger med digitale værktøjer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Regning med skriftlige notater'}), 'm': {'name': 'Regning med skriftlige notater'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tælle på fingrer'}), 'm': {'name': 'Tælle på fingrer'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Pluspar'}), 'm': {'name': 'Pluspar'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': "10'er venner"}), 'm': {'name': "10'er venner"}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Tabelremser'}), 'm': {'name': 'Tabelremser'}}
+{'n': {'topicName': 'Regnestrategier'}, 'r': ({'topicName': 'Regnestrategier'}, 'HAS_STRATEGY', {'name': 'Opdele fysiske ting'}), 'm': {'name': 'Opdele fysiske ting'}}
+
+🤖 Model Answer:
+Matematik hjælper os med at løse problemer hver dag! Vi bruger det til at finde ud af, hvor mange venner vi har, når vi leger, til at købe mad, eller til at lave mad. Kan du tænke på et eksempel, hvor du har brugt matematik?
+
+
+
+🏁 Evaluation:
+{
+  "semantic_alignment": {
+    "score": 0.812549673634795,
+    "passed": true,
+    "reason": "The response effectively utilizes a guiding question, prompting the child to think of their own examples of using math, which encourages engagement. It employs simple language appropriate for 7-9 year olds, avoiding complex terminology. However, it lacks specific reference to a teaching strategy like 10'er venner or tier-venner, which could enhance the instructional aspect."
+  },
+  "faithfulness": {
+    "score": 1.0,
+    "passed": true,
+    "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output perfectly aligns with the information given in the retrieval context."
+  }
+}
+Traceback (most recent call last):
+  File "C:\Users\jakob\Desktop\Git Repos\LangchainGenAIFromNeo4jTut\Jakob's_Stuff\Manual_KG_RAG_TEST_WORKS.py", line 256, in <module>
+    pd.DataFrame(results).to_excel("/geval_results.xlsx", index=False)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jakob\anaconda3\envs\P7_TestClone1\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\jakob\anaconda3\envs\P7_TestClone1\Lib\site-packages\pandas\core\generic.py", line 2436, in to_excel
+    formatter.write(
+    ~~~~~~~~~~~~~~~^
+        excel_writer,
+        ^^^^^^^^^^^^^
+    ...<6 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jakob\anaconda3\envs\P7_TestClone1\Lib\site-packages\pandas\io\formats\excel.py", line 943, in write
+    writer = ExcelWriter(
+        writer,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "C:\Users\jakob\anaconda3\envs\P7_TestClone1\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        path,
+        ^^^^^
+    ...<3 lines>...
+        engine_kwargs=engine_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jakob\anaconda3\envs\P7_TestClone1\Lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+                    ~~~~~~~~~~^
+        path, mode, storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jakob\anaconda3\envs\P7_TestClone1\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: '/geval_results.xlsx'
+
+Process finished with exit code 1
