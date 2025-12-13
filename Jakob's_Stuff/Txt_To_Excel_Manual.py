@@ -5,8 +5,8 @@ import json
 
 # --- CONFIGURATION ---
 # Use raw string (r'...') for Windows paths to handle backslashes correctly
-INPUT_FILENAME = r"C:\Users\jakob\Desktop\Git Repos\LangchainGenAIFromNeo4jTut\Jakob's_Stuff\User_Model_Txt_Files\UserModelTestOutput 5.txt"
-OUTPUT_FILENAME = 'RAG_Results_5.xlsx'
+INPUT_FILENAME = r"C:\Users\jakob\Desktop\Git Repos\LangchainGenAIFromNeo4jTut\Jakob's_Stuff\User_Model_Txt_Files\UserModelTestOutput 6.txt"
+OUTPUT_FILENAME = 'RAG_Results_6.xlsx'
 
 
 # ---------------------
