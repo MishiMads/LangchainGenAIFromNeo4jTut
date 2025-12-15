@@ -92,7 +92,7 @@ local_judge = OllamaJudge("llama3.1")
 # 2. DATA LOADING
 # ==========================================
 # Using a relative path is safer than an absolute C:\ path
-filename = R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\Golden Dataset.xlsx"
+filename = R"/genai-integration-langchain/Scripts/Golden Dataset.xlsx"
 test_data = []
 
 print(f"\n--- Loading Test Data from {filename} ---")

@@ -1,0 +1,2562 @@
+C:\Users\mnj-7\.conda\envs\DetHerPisBreakerSikkert\python.exe "C:/Program Files/JetBrains/PyCharm 2025.2.3/plugins/python-ce/helpers/pycharm/_jb_pytest_runner.py" --path C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\ScriptsRelatedToSisterGroup\TestScripts\test_ragExcelDONTWORK.py 
+Testing started at 09.46 ...
+Launching pytest with arguments C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\ScriptsRelatedToSisterGroup\TestScripts\test_ragExcelDONTWORK.py --no-header --no-summary -q in C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut
+
+============================= test session starts =============================
+collecting ... collected 50 items
+
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data0] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data1] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data2] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data3] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data4] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data5] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data6] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data7] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data8] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data9] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data10] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data11] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data12] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data13] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data14] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data15] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data16] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data17] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data18] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data19] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data20] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data21] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data22] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data23] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data24] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data25] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data26] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data27] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data28] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data29] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data30] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data31] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data32] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data33] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data34] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data35] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data36] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data37] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data38] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data39] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data40] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data41] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data42] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data43] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data44] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data45] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data46] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data47] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data48] 
+genai-integration-langchain/Scripts/ScriptsRelatedToSisterGroup/TestScripts/test_ragExcelDONTWORK.py::test_math_rag[data49] Running teardown with pytest sessionfinish...
+
+
+============ 2 failed, 48 passed, 1 warning in 1593.47s (0:26:33) =============
+PASSED [  2%]
+---------------------------------------------------
+Testing Query: Hvad giver 6 + 7?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Prøv at tænke på et plus-par du kender. Hvad giver 6 + 6? 7 er én mere end 6 så hvad skal du lægge til resultatet?
+Actual (full): "Lad os bruge 10'er venner! Hvis vi tager 6 og lægger 4 til, så får vi 10. Hvor mange er der tilbage fra 7?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses a guiding question by prompting the learner to think about how many are left after reaching 10 with 6 and 4. It references the teaching strategy of '10'er venner' appropriately, which is suitable for the target age group. The language is simple and accessible for 7-9 year olds, avoiding complex terminology. However, it could be slightly improved by providing more context or support for the learner's thought process.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [  4%]
+---------------------------------------------------
+Testing Query: Jeg kan ikke huske 7 + 8.
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Det er et svært stykke. Men ved du hvad det dobbelte af 7 er? Så mangler du bare at lægge én til resultatet.
+Actual (full): "Kan du huske 10'er venner? Hvis du tager 7 og lægger 3 til, får du 10. Hvor mange mere skal du lægge til for at nå 8?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.50 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.50 because the actual output incorrectly states that 7 plus 3 equals 10, which is not supported by the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to think about 10'er venner and how to reach the number 8. It references an appropriate teaching strategy, which is beneficial for the target age group. The language is simple and accessible, making it suitable for 7-9 year olds. However, it could be slightly improved by providing a more direct connection to the concept of 10'er venner in the context of reaching 8.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [  6%]
+---------------------------------------------------
+Testing Query: Hvad giver 6 + 5?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Hvis du flytter 1 fra 6-tallet over til 5-tallet hvilket plus-par får du så? (5+5 eller 6+6?)
+Actual (full): "Kan du huske 10'er venner? Hvis vi tager 5 og deler det op i 5 og 0, så kan vi lægge 5 til 6. Hvad får du så?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.50 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.50 because the actual output incorrectly states that dividing 5 by 5 and 0 will yield a correct result, while the retrieval context clarifies that 5 + 6 does not equal 5, indicating a misunderstanding of basic arithmetic principles.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to recall the concept of '10'er venner' and encourages them to think through the problem. It also employs a simple teaching strategy relevant to the age group. The language is accessible and avoids complex terminology, making it suitable for 7-9 year olds. However, it could be slightly more explicit in guiding the student through the steps of the problem.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+FAILED [  8%]
+---------------------------------------------------
+Testing Query: Hvad er 8 plus 5?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Vi kan bruge 'fyld op'-strategien. Hvad er 8s tier-ven? Hvor meget skal du 'stjæle' fra 5 for at få 10?
+Actual (full): "Kan du huske 10'er venner? Hvis vi tager 5 og deler det op i 2 og 3, kan vi lægge 2 til 8 for at få 10. Hvad bliver så resten?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.00 / 1.00
+Threshold: 0.5
+Status: ❌ FAIL
+
+💭 Judge's Reasoning:
+The score is 0.00 because the actual output incorrectly claims that adding 2 to 8 gives 10, which is not supported by the retrieval context that discusses splitting 5 into 3 and 2 without any relation to the addition.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to recall the concept of '10'er venner' and encourages them to think critically about the problem. It references an appropriate teaching strategy by mentioning '10'er venner', which is relevant for the target age group. The language is simple and accessible, suitable for 7-9 year olds, avoiding overly complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+
+❌ TEST FAILED
+============================================================
+Metrics: Faithfulness (score: 0.0, threshold: 0.5, strict: False, error: None, reason: The score is 0.00 because the actual output incorrectly connects the division of 5 into 2 and 3 with the unrelated addition of 2 to 8, leading to a complete misalignment with the retrieval context.) failed.
+============================================================
+
+
+
+
+genai-integration-langchain\Scripts\ScriptsRelatedToSisterGroup\TestScripts\test_ragExcelDONTWORK.py:375 (test_math_rag[data3])
+genai-integration-langchain\Scripts\ScriptsRelatedToSisterGroup\TestScripts\test_ragExcelDONTWORK.py:539: in test_math_rag
+    assert_test(test_case, metrics)
+..\..\.conda\envs\DetHerPisBreakerSikkert\Lib\site-packages\deepeval\evaluate\evaluate.py:187: in assert_test
+    raise AssertionError(f"Metrics: {failed_metrics_str} failed.")
+E   AssertionError: Metrics: Faithfulness (score: 0.0, threshold: 0.5, strict: False, error: None, reason: The score is 0.00 because the actual output incorrectly connects the division of 5 into 2 and 3 with the unrelated addition of 2 to 8, leading to a complete misalignment with the retrieval context.) failed.
+PASSED [ 10%]
+---------------------------------------------------
+Testing Query: Hvad er 9 plus 6?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: 9 mangler kun 1 for at blive 10. Prøv at tage 1 fra 6eren så du får 10 + resten.
+Actual (full): "Kan du huske 10'er venner? Hvis vi tager 9 og lægger 1 til, får vi 10. Hvor mange er der så tilbage fra 6?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to recall the '10'er venner' strategy, which is appropriate for the age group. It also employs simple language suitable for 7-9 year olds, avoiding complex terminology. However, it could have explicitly referenced a specific teaching strategy more clearly to enhance alignment with the evaluation steps.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 12%]
+---------------------------------------------------
+Testing Query: Hvad er 15 minus 5?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Tænk på hvordan tallet 15 er bygget. Det er en 10er og en 5er. Hvis du fjerner 5eren hvad er der tilbage?
+Actual (full): "Kan du tænke på 10'er venner? Hvis du har 15 og tager 5 væk, kan du først tage 5 fra 15 og se, hvad der er tilbage. Hvad får du, hvis du tager 5 fra 15?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to think about '10'er venner' and encouraging them to calculate the result of subtracting 5 from 15. This aligns well with the first evaluation step. However, while the language is simple and appropriate for the target age group, it could benefit from a more explicit reference to a specific teaching strategy, such as 'tier-venner', to enhance its educational effectiveness.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 14%]
+---------------------------------------------------
+Testing Query: Hvordan regner jeg 12 minus 9?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: 9 er meget tæt på 10. Prøv først at trække 10 fra (så har du 2) og læg så 1 til igen fordi du trak for meget fra.
+Actual (full): "Kan du tænke på 10'er venner? Hvis du har 12 og vil tage 9 væk, kan du først tage 2 fra 12 for at nå 10. Hvor mange er der så tilbage, når du har taget 2 væk?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.50 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.50 because the actual output incorrectly suggests a method of subtraction that is not directly mentioned in the retrieval context, leading to confusion about the correct approach.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to think about '10'er venner' and how to manipulate numbers to reach 10. It also references an appropriate teaching strategy by introducing the concept of '10'er venner' in a relatable context. The language is simple and suitable for 7-9 year olds, avoiding complex terminology, which aligns well with the evaluation criteria.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 16%]
+---------------------------------------------------
+Testing Query: Hvad er 14 minus 7?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Prøv at tænke på plus-par. Du ved at 7 + 7 er 14. Så hvad er 14 - 7?
+Actual (full): "Kan du tænke på, hvad 7 er i forhold til 14? Hvis 14 er 10 og 4, hvor mange skal du tage fra 10 for at få 7? Hvad bliver der så tilbage?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.75 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.75 because the actual output incorrectly states '14 er 10 og 4', which contradicts the retrieval context where 14 is not represented as a sum of 10 and 4.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to lead the learner towards the answer rather than providing it directly, which aligns well with the first evaluation step. It encourages critical thinking by prompting the student to consider relationships between numbers. However, it does not reference a specific teaching strategy like '10'er venner' or 'tier-venner', which could enhance the instructional approach. The language used is simple and appropriate for the target age group, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 18%]
+---------------------------------------------------
+Testing Query: Hvad er 3 gange 2?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Tænk på det som gentagen addition. Hvad er 2 + 2 + 2?
+Actual (full): "Hvordan kan vi tænke på 3 gange 2? Kan du huske, at gange betyder, at vi lægger det samme tal sammen flere gange? Så hvis vi har 3 grupper af 2, hvor mange har vi så i alt? Prøv at tælle dem!"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, asking how to think about multiplication and prompting them to recall the meaning of multiplication. It also employs a simple teaching strategy by encouraging counting, which is appropriate for the target age group. The language is clear and accessible, avoiding complex terminology, making it suitable for 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+FAILED [ 20%]
+---------------------------------------------------
+Testing Query: Hvad er 2 gange 5?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Tænk på det som det dobbelte af 5.
+Actual (full): "Hvordan kan vi bruge dobbelt-op? Hvis 2 gange 5 er det samme som 2 plus 2 plus 2 plus 2 plus 2, hvor mange 2'ere har vi så i alt?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.00 / 1.00
+Threshold: 0.5
+Status: ❌ FAIL
+
+💭 Judge's Reasoning:
+The score is 0.00 because the actual output misrepresents multiplication as a series of additions, which contradicts standard arithmetic definitions.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses a guiding question to engage the learner, asking how to apply the 'dobbelt-op' strategy. It references an appropriate teaching strategy relevant to the age group. The language is simple and accessible for 7-9 year olds, avoiding complex terminology, which aligns well with the evaluation steps.
+------------------------------------------------------------
+============================================================
+
+
+
+❌ TEST FAILED
+============================================================
+Metrics: Faithfulness (score: 0.0, threshold: 0.5, strict: False, error: None, reason: The score is 0.00 because the actual output misrepresents multiplication as a series of additions, which contradicts the clear distinction between these operations in the retrieval context.) failed.
+============================================================
+
+
+
+
+genai-integration-langchain\Scripts\ScriptsRelatedToSisterGroup\TestScripts\test_ragExcelDONTWORK.py:375 (test_math_rag[data9])
+genai-integration-langchain\Scripts\ScriptsRelatedToSisterGroup\TestScripts\test_ragExcelDONTWORK.py:539: in test_math_rag
+    assert_test(test_case, metrics)
+..\..\.conda\envs\DetHerPisBreakerSikkert\Lib\site-packages\deepeval\evaluate\evaluate.py:187: in assert_test
+    raise AssertionError(f"Metrics: {failed_metrics_str} failed.")
+E   AssertionError: Metrics: Faithfulness (score: 0.0, threshold: 0.5, strict: False, error: None, reason: The score is 0.00 because the actual output misrepresents multiplication as a series of additions, which contradicts the clear distinction between these operations in the retrieval context.) failed.
+PASSED [ 22%]
+---------------------------------------------------
+Testing Query: Hvad er 10 gange 2?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Det er to tiere. Hvad giver 10 + 10?
+Actual (full): "Hvordan kan vi tænke på 10 gange 2? Kan du huske, at 10'er vennerne hjælper os med at tælle? Hvis vi har 2 grupper af 10, hvor mange 10'er har vi så i alt?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.67 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.67 because the actual output incorrectly implies that 10’er vennerne assists with counting, while the context specifies that it helps with finding solutions to calculations.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, such as asking how to think about 10 times 2 and referencing 10'er vennerne as a helpful strategy. The language is simple and appropriate for 7-9 year olds, avoiding complex terminology while encouraging critical thinking about the math problem.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 24%]
+---------------------------------------------------
+Testing Query: Hvad er det halve af 10?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: At finde det halve er det samme som at dele med 2. Hvad er 5 + 5?
+Actual (full): "Hvordan kan vi finde det halve af 10? Tænk på, at hvis vi deler 10 op i to lige store dele, hvor mange vil der så være i hver del? Kan du tælle op til 10 og dele det op?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking, asking how to find half of 10 and prompting the child to consider dividing it into two equal parts. It avoids complex terminology, using simple language suitable for 7-9 year olds. However, it does not explicitly reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 26%]
+---------------------------------------------------
+Testing Query: Hvad er det halve af 8?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Tænk på et plus-par der giver 8. Hvilket tal skal du plusse med sig selv for at få 8?
+Actual (full): "Hvordan kan vi finde det halve af 8? Tænk på, at hvis du deler 8 op i to lige store grupper, hvor mange vil der så være i hver gruppe? Kan du tælle dem?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 1.00 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking, asking how to find half of 8 and prompting the learner to visualize dividing it into two equal groups. This aligns well with the evaluation steps. Additionally, the language is simple and appropriate for 7-9 year olds, avoiding complex terminology and making the concept accessible.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 28%]
+---------------------------------------------------
+Testing Query: Hvad er 6 delt med 2?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Det er det samme som at spørge: Hvad er det halve af 6? Eller: Hvad skal jeg gange med 2 for at få 6?
+Actual (full): "Hvordan kan vi tænke på deling? Hvis du har 6 ting og deler dem i 2 grupper, hvor mange ting vil der være i hver gruppe? Kan du tælle dem?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, asking how to think about sharing and prompting them to count items. It avoids complex terminology, using simple language suitable for 7-9 year olds. However, it does not reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 30%]
+---------------------------------------------------
+Testing Query: Hvad er 46 + 38?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Ved et regnestykke som 27+25 tænker eleven måske på, at 25+25=50, så må 27+25 være to 
+mere, altså 52. Ved regnestykket 48+26 kan eleven flytte to fra 26 over til 48, så bliver det i 
+stedet 50+24, og...
+Expected: Prøv at dele det op. Hvad får du hvis du kun plusser tierne (40 + 30) først? Så kan vi tage enerne bagefter.
+Actual (full): "Lad os bruge opdelingsmetoden! Tænk på 46 som 40 + 6 og 38 som 30 + 8. Hvad får du, hvis du lægger 40 og 30 sammen først?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to think about the addition of 40 and 30 first, which encourages engagement. It references a teaching strategy (opdelingsmetoden) that is appropriate for the age group. The language is simple and accessible for 7-9 year olds, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 32%]
+---------------------------------------------------
+Testing Query: Hvad er 20 minus 5?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Ved et regnestykke som 27+25 tænker eleven måske på, at 25+25=50, så må 27+25 være to 
+mere, altså 52. Ved regnestykket 48+26 kan eleven flytte to fra 26 over til 48, så bliver det i 
+stedet 50+24, og...
+Expected: Tænk på dine 10er venner. Hvis du tager 5 fra den ene 10er hvad er der så tilbage sammen med den anden 10er?
+Actual (full): "Kan du tænke på 20 som 10 + 10? Hvis du tager 5 fra 10, hvad får du så? Og hvad med de 10 mere?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking, such as asking the child to consider 20 as 10 + 10 and to think about subtracting 5 from 10. However, it lacks a specific teaching strategy reference like '10'er venner' or 'tier-venner', which would enhance its educational value. The language is simple and appropriate for the target age group, making it accessible for 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 34%]
+---------------------------------------------------
+Testing Query: Hvordan plusser jeg store tal?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Du kan bygge tallene med tier-stænger i hovedet. Saml alle tierne i én bunke og enerne i en anden.
+Actual (full): "Når vi plusser store tal, kan vi bruge opdelingsmetoden! Tænk på, hvordan vi kan dele tallene op i tiere og enere. Kan du prøve at dele tallene op og se, hvor mange tiere og enere du får?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to think about how to break down the numbers into tens and ones, which aligns well with the first evaluation step. It also references the 'opdelingsmetoden' as a teaching strategy, which is appropriate for the context. The language is simple and accessible for 7-9 year olds, avoiding complex terminology, thus meeting the third evaluation step. However, it could have been slightly more explicit in demonstrating the teaching strategy used.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 36%]
+---------------------------------------------------
+Testing Query: Hvad betyder 5 i 53?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Ved et regnestykke som 27+25 tænker eleven måske på, at 25+25=50, så må 27+25 være to 
+mere, altså 52. Ved regnestykket 48+26 kan eleven flytte to fra 26 over til 48, så bliver det i 
+stedet 50+24, og...
+Expected: Tænk på titalssystemet. Står 5-tallet på ener-pladsen eller tier-pladsen?
+Actual (full): "Godt spørgsmål! Tænk på 53 som 50 og 3. Hvad tror du, 5 i 53 fortæller os om, hvor mange tiere der er?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking rather than providing a direct answer, which aligns well with the evaluation steps. It also simplifies the concept of breaking down the number 53 into 50 and 3, making it accessible for the target age group. However, it could have referenced a specific teaching strategy like 'tier-venner' to strengthen its educational approach.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 38%]
+---------------------------------------------------
+Testing Query: Hvad er 10 + 2?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Tænk på hvordan vi siger tallet: 'Tolv'. Det består netop af en tier og to enere.
+Actual (full): "Hvordan kan vi bruge 10'er venner her? Hvis 10 + 0 = 10, hvad sker der så, når vi lægger 2 til?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, asking how to apply the 10'er venner strategy. It encourages critical thinking by prompting the student to consider the addition of 2 to 10, which aligns well with the evaluation steps. However, it could be improved by explicitly referencing a teaching strategy or providing a clearer context for the question to enhance understanding for the target age group.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 40%]
+---------------------------------------------------
+Testing Query: Hvad skal jeg bruge en tallinje til?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: som arealenhed. 
+Til refleksion: Overvej, hvor de fire forskellige måder at bruge tal på kan komme i spil i en 1. 
+klasses hverdagsliv. 
+ 
+Talforståelse og tællestrategier 
+I praksis har eleverne brug...
+Expected: Du kan bruge den til at hoppe fremad (plus) eller baglæns (minus). Hvilket tal vil du starte på?
+Actual (full): "En tallinje hjælper os med at se, hvordan tal hænger sammen. Kan du finde ud af, hvordan vi kan bruge den til at tælle eller tilføje tal? Tænk på, hvordan vi kan hoppe fra et tal til et andet!"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, prompting them to think about how to use a number line for counting and adding. It avoids overly complex terminology, using simple language suitable for 7-9 year olds. However, it does not reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 42%]
+---------------------------------------------------
+Testing Query: Hvordan regner jeg 15–6?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Prøv først at fjerne de 5 så du lander på 10. Hvor mange mangler du så at fjerne fra 6-tallet?
+Actual (full): "Kan du tænke på 15 som 10 + 5? Hvis du trækker 6 fra 5, kan du ikke, men hvad hvis du tager 1 fra 5 og lægger det til 10? Hvad får du så?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.67 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.67 because the actual output incorrectly suggests that subtracting 6 from 5 is possible, while the retrieval context clearly states that 5 is less than 6, making such a subtraction impossible.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to lead the student towards the answer rather than providing it directly, which aligns well with the first evaluation step. It also incorporates a teaching strategy by encouraging the student to think about numbers in a different way, similar to the '10'er venner' concept. However, the language could be simplified slightly to ensure it is fully accessible to 7-9 year olds, as some phrases may still be a bit complex for that age group.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 44%]
+---------------------------------------------------
+Testing Query: Er det forkert at tælle sig frem?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Selvom det er helt naturligt, at eleverne tæller meget i de første skoleår, så er det vigtigt, at de 
+oplever en fleksibel tilgang til regning og 
+allerede på de yngste klassetrin får mulighed for, at...
+Expected: Nej slet ikke. Det er en sikker måde. Men hvis du bliver træt af at tælle kan vi øve nogle smartere måder?
+Actual (full): Det er ikke forkert at tælle sig frem, men det er godt at lære andre måder at regne på også! Kan du tænke på en måde, hvor du kan finde svaret hurtigere uden at tælle hver gang?
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage the learner to think critically about alternative methods for finding answers, aligning well with the first evaluation step. It also avoids overly complex terminology, using simple language suitable for 7-9 year olds. However, it does not reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 46%]
+---------------------------------------------------
+Testing Query: Hvorfor hedder det tre-hundrede?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: metoder til beregninger. Titalssystemets grundlæggende ide er at gruppere enere i grupper af 
+10, tiere af grupper af 100 osv. Tallene angives ved at skrive hvor mange af hver typegruppe, 
+det indehol...
+Expected: Fordi der er 3 af de store plader med 100 på. Prøv at sige det langsomt: 3 ... hundrede.
+Actual (full): "Hvor mange hundreder er der i tallet tre-hundrede? Kan du tælle dem? Hvad betyder det, når vi siger 'tre-hundrede'?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.67 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.67 because the actual output incorrectly states that there are hundreds in the number three hundred, while the retrieval context clarifies that three hundred is simply 300.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, asking them to count and interpret the meaning of 'tre-hundrede'. However, it lacks a specific teaching strategy reference, which would enhance its educational value. The language is simple and appropriate for the target age group, making it accessible for 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 48%]
+---------------------------------------------------
+Testing Query: Hvad giver 48 + 26?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Ved et regnestykke som 27+25 tænker eleven måske på, at 25+25=50, så må 27+25 være to 
+mere, altså 52. Ved regnestykket 48+26 kan eleven flytte to fra 26 over til 48, så bliver det i 
+stedet 50+24, og...
+Expected: Prøv at flytte 2 fra 26 over til 48. Hvad bliver 48 så til? Og hvad er der tilbage af 26?
+Actual (full): "Lad os tænke på 10'er venner! Hvis vi tager 2 fra 26, så får vi 24. Hvad bliver 48 + 2? Og hvad med de 24, vi har tilbage?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.33 / 1.00
+Threshold: 0.5
+Status: ❌ FAIL
+
+💭 Judge's Reasoning:
+The score is 0.33 because the actual output incorrectly states that subtracting 2 from 26 results in 24, which is irrelevant to the context of moving numbers in calculations, and it also misrepresents the relevance of having 24 left, as it does not relate to the mentioned calculations.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, prompting them to think critically about the math problem. It references the teaching strategy of '10'er venner' appropriately, which is relevant for the age group. The language is simple and accessible for 7-9 year olds, avoiding complex terminology, though it could be slightly clearer in guiding the student through the thought process.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 50%]
+---------------------------------------------------
+Testing Query: Hvad er forskellen på 7 og 10?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Hvor mange skridt skal du gå fra 7 for at ramme 10? Det antal skridt er forskellen.
+Actual (full): "Hvordan kan vi finde ud af, hvor mange der er fra 7 til 10? Kan du tælle op fra 7? Hvad får du, når du tæller 8, 9 og så 10?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage the child to think critically about counting from 7 to 10, which aligns well with the first evaluation step. However, it lacks a specific teaching strategy reference, such as 'tier-venner' or '10'er venner', which would enhance its educational value. The language is simple and appropriate for the target age group, making it accessible for 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 52%]
+---------------------------------------------------
+Testing Query: Hvad er 4 gange 3?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Forestil dig 4 bunker med 3 i hver. Kan du tælle 3-tabellen? 3-6-9-12.
+Actual (full): "Kan du huske dobbelt-op? Hvis 4 gange 2 er 8, hvad tror du så 4 gange 3 er? Prøv at tælle 4 til, så du får 4 + 4 + 4."
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.50 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.50 because the actual output incorrectly states that '4 gange 3 er 4 + 4 + 4', which misrepresents multiplication; it should reflect that 4 times 3 equals 12.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 1.00 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the student to think about the relationship between multiplication facts, specifically referencing 'dobbelt-op' as a teaching strategy. The language is simple and appropriate for 7-9 year olds, avoiding complex terminology while encouraging counting in a relatable manner.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 54%]
+---------------------------------------------------
+Testing Query: Kan du 5-tabellen?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Prøv at tælle med: 5 - 10 - 15 - 20... Hvor langt kan du komme?
+Actual (full): "Vi kan bruge dobbelt-op til at hjælpe os! Hvis du ved, hvad 5 + 5 er, kan du så finde ud af, hvad 5 + 10 er? Hvad med at tælle op fra 5? Hvad får du, hvis du lægger 5 til?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage problem-solving rather than providing direct answers, which aligns well with the evaluation steps. It references the 'dobbelt-op' teaching strategy appropriately. Additionally, the language is simple and suitable for 7-9 year olds, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 56%]
+---------------------------------------------------
+Testing Query: Hvordan deler jeg 12 med 3?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Prøv at 'dele kort ud' til 3 personer. Én til dig én til mig... indtil de 12 er væk.
+Actual (full): "Kan du tænke på, hvor mange gange 3 kan være i 12? Hvis du tæller 3, 6, 9, 12, hvor mange gange har du talt til 12?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.50 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.50 because the actual output incorrectly suggests that 3 can appear in 12 multiple times, while the retrieval context clarifies that 3 is only present in 12 four times (3, 6, 9, 12).
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 1.00 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to lead the student towards the answer without providing it directly. It encourages the student to think critically about the problem by counting in increments of 3, which aligns well with the evaluation steps. Additionally, the language is simple and appropriate for 7-9 year olds, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 58%]
+---------------------------------------------------
+Testing Query: Jeg har 8 æbler og vi er 4 børn.
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Elevernes udvikling af talforståelse kan flettes sammen med udviklingen af 
+strategier til at tælle og regne. Denne artikel giver ideer til undervisningen i 
+talforståelse i indskolingen. 
+ 
+ 
+Generel...
+Expected: Hvis I skal have lige mange skal I dele dem. Prøv at give ét æble til hver indtil der ikke er flere.
+Actual (full): "Hvis vi skal dele 8 æbler mellem 4 børn, kan vi tænke på, hvor mange æbler hver får. Kan du tælle, hvor mange æbler der er til hver, hvis vi deler dem ligeligt?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses a guiding question by prompting the child to count the apples, which encourages engagement and critical thinking. It also employs simple language appropriate for 7-9 year olds, avoiding complex terminology. However, it does not explicitly reference a specific teaching strategy like '10'er venner' or 'tier-venner', which could enhance the educational approach.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 60%]
+---------------------------------------------------
+Testing Query: Vi er 3 børn der skal dele 9 sodavand.
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Prøv at give en sodavand til hver på skift indtil der ikke er flere. Hvor mange fik I hver?
+Actual (full): "Hvordan kan vi dele 9 sodavand mellem 3 børn? Kan du tænke på, hvor mange sodavand hver af jer ville få, hvis I deler dem ligeligt? Hvad sker der, hvis du tæller 3 sodavand til hver?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 1.00 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking about dividing 9 sodas among 3 children, aligning perfectly with the first evaluation step. It avoids complex terminology, using simple language suitable for 7-9 year olds. Additionally, it implicitly suggests a teaching strategy by prompting the child to think about equal sharing, which is appropriate for the context.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 62%]
+---------------------------------------------------
+Testing Query: Hvordan lægger jeg 4 til 32?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Ved et regnestykke som 27+25 tænker eleven måske på, at 25+25=50, så må 27+25 være to 
+mere, altså 52. Ved regnestykket 48+26 kan eleven flytte to fra 26 over til 48, så bliver det i 
+stedet 50+24, og...
+Expected: Du behøver ikke starte forfra. Start ved 32 og tæl 4 videre frem. Hvad kommer efter 32?
+Actual (full): "Kan du tænke på 32 som 30 og 2? Hvis du lægger 4 til 2, hvad får du så? Og hvad med 30? Hvad bliver det samlede resultat?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 1.00 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to lead the student towards the answer without providing it directly. It encourages critical thinking by prompting the student to consider 32 as 30 and 2, and to perform simple addition. The language is appropriate for the target age group, using simple Danish phrases that are accessible to 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 64%]
+---------------------------------------------------
+Testing Query: Hvad kommer efter 29?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Ved et regnestykke som 27+25 tænker eleven måske på, at 25+25=50, så må 27+25 være to 
+mere, altså 52. Ved regnestykket 48+26 kan eleven flytte to fra 26 over til 48, så bliver det i 
+stedet 50+24, og...
+Expected: Hvad sker der med tierne når vi har fyldt ener-rækken helt op med 9? Så skal vi op på den næste runde tier.
+Actual (full): "Hvad tror du, der kommer efter 29? Kan du tælle videre fra 29? Hvad får du, hvis du lægger 1 til?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 1.00 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage the child to think and engage with the material, such as asking what comes after 29 and prompting them to count further. The language is simple and appropriate for 7-9 year olds, avoiding complex terminology. There is no reference to specific teaching strategies, but the approach aligns well with the evaluation steps.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 66%]
+---------------------------------------------------
+Testing Query: Hvordan tæller jeg baglæns fra 10?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Forestil dig en raketopsendelse. Hvad siger man før man siger 'affyring'? 10 - 9...
+Actual (full): "Prøv at tælle fra 10 og tag én væk hver gang. Hvad bliver det, når du tager 1 fra 10? Og hvis du fortsætter, hvad bliver det så, når du tager 1 fra det tal?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, prompting them to think critically about the subtraction process. It avoids overly complex terminology, using simple language suitable for 7-9 year olds. However, it does not reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 68%]
+---------------------------------------------------
+Testing Query: Kan man måle med fødder?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: hvor de bliver bedt om at give et bestemt 
+antal klodser til en klassekammerat. 
+Ifølge Munn skyldes dette, at børn sjældent tæller for at bestemme en mængdes størrelse, 
+men mere som en del af lege e...
+Expected: Ja det er en 'uformel enhed'. Prøv at gå hæl-mod-tå. Hvor mange fødder lang er tæppet?
+Actual (full): Ja, man kan godt måle med fødder! Tænk på, hvor mange fødder der er i en meter. Hvis du bruger dine egne fødder til at måle, hvor mange fødder kan du så tælle, når du går fra den ene ende til den anden?
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the child in thinking about measurement, which aligns well with the first evaluation step. It encourages the child to consider how many feet are in a meter and to count their own steps, promoting active participation. However, it lacks a specific teaching strategy reference, which would have strengthened the response further. The language is simple and appropriate for the target age group, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 70%]
+---------------------------------------------------
+Testing Query: Hvad er forskellen på 12 og 8?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Du kan tælle op fra 8 til 12. Hvor mange fingre skal du bruge? 9-10-11-12.
+Actual (full): "Kan du huske, hvordan vi kan finde forskellen ved at tælle? Hvis vi starter ved 8 og tæller op til 12, hvor mange tal skal vi tælle for at nå dertil?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.50 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.50 because the actual output incorrectly implies that counting is necessary to reach the numbers 8 to 12, while the retrieval context states that it is a direct sequence of numbers.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, asking them to recall how to find the difference by counting. This aligns well with the first evaluation step. However, it does not reference a specific teaching strategy like '10'er venner' or 'tier-venner', which would strengthen the response further. The language is simple and appropriate for the target age group, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 72%]
+---------------------------------------------------
+Testing Query: Hvad giver 10 minus 3?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Tænk på tier-vennerne. Hvilket tal hører sammen med 3 for at give 10? Det er svaret.
+Actual (full): "Hvordan kan vi bruge 10'er venner til at finde svaret? Hvis 10 minus 3 er det samme som at finde ud af, hvor mange der er tilbage, når vi tager 3 væk fra 10. Kan du tælle, hvor mange der er tilbage?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the learner to think about the concept of 10'er venner and how it relates to subtraction. It also employs simple language suitable for 7-9 year olds, avoiding complex terminology. However, it could have explicitly referenced a specific teaching strategy more clearly to enhance alignment with the evaluation steps.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 74%]
+---------------------------------------------------
+Testing Query: Hvad betyder 'gange'?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Elevernes udvikling af talforståelse kan flettes sammen med udviklingen af 
+strategier til at tælle og regne. Denne artikel giver ideer til undervisningen i 
+talforståelse i indskolingen. 
+ 
+ 
+Generel...
+Expected: Det betyder at tage det samme tal flere gange. F.eks. 3 poser med 2 æbler i hver.
+Actual (full): "Gange" betyder, at vi lægger et tal sammen flere gange. For eksempel, hvis vi siger 3 gange 4, så kan vi tænke på det som at have 4 grupper med 3 i hver. Kan du tælle, hvor mange der er i alt, hvis du lægger 3 sammen 4 gange?
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.67 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.67 because the actual output incorrectly interprets 'Gange' as simple addition rather than multiplication, which is the correct definition provided in the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses a guiding question by asking the reader to count the total, which encourages engagement rather than providing a direct answer. It also employs a clear teaching strategy by illustrating multiplication through grouping, which is appropriate for the target age group. The language is simple and accessible, avoiding complex terminology, making it suitable for 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 76%]
+---------------------------------------------------
+Testing Query: Hvad er 0 gange 5?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Hvis du har 0 poser med 5 slikpinde hvor mange slikpinde har du så i alt?
+Actual (full): "Hvis vi tænker på, hvad 'gange' betyder, så handler det om at tage et tal flere gange. Hvad sker der, hvis vi ikke tager noget? Kan du finde ud af, hvad 0 gange noget altid giver?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.67 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.67 because the actual output incorrectly suggests that multiplying zero by anything yields a result, while the retrieval context states that it always gives zero, not a result.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking, such as asking what happens when nothing is multiplied. It avoids complex terminology, using simple language suitable for 7-9 year olds. However, it does not reference a specific teaching strategy like '10'er venner' or 'tier-venner', which would have strengthened the alignment with the evaluation steps.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 78%]
+---------------------------------------------------
+Testing Query: Hvad er 1 gange 7?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Hvis du har 1 pose med 7 ting så har du bare de 7 ting. Én gang tallet er tallet selv.
+Actual (full): "Hvordan kan vi tænke på 1 ganget med 7? Hvis du har 1 gruppe med 7 ting, hvor mange ting har du så i alt? Kan du tælle dem?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, asking how to think about the multiplication of 1 and 7 and prompting them to count the items. However, it lacks a specific teaching strategy reference, such as 'tier-venner' or '10'er venner', which would enhance its educational value. The language is simple and appropriate for the target age group, making it accessible for 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 80%]
+---------------------------------------------------
+Testing Query: Hvad er kvadratet på 2?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Det er bare et fint ord for 2 gange 2. Tænk på en firkant med 2 på hver led.
+Actual (full): "Hvad sker der, hvis vi tager 2 og ganger det med sig selv? Kan du huske, at når vi ganger, så lægger vi tallet sammen flere gange? Hvad får vi, hvis vi lægger 2 + 2 sammen?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.67 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.67 because the actual output incorrectly suggests that multiplication is merely repeated addition, which contradicts the retrieval context's clarification that multiplication is a distinct operation.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, prompting them to think about multiplication and addition. It avoids complex terminology, using simple language suitable for 7-9 year olds. However, it does not reference a specific teaching strategy like '10'er venner' or 'tier-venner', which would have strengthened the alignment with the evaluation steps.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 82%]
+---------------------------------------------------
+Testing Query: Jeg har 3 poser med 4 boller.
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Her kan du bruge gange. Det er 3 gange 4. Prøv at lægge 4 sammen 3 gange: 4 + 4 + 4.
+Actual (full): "Hvor mange boller har du i alt? Kan du tælle dem én ad gangen, eller kan du bruge en strategi? Hvad hvis du tænker på 4 boller i hver pose og så ganger med 3 poser?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage the child to think critically about the problem, such as asking how they might count the buns. It also introduces a relevant teaching strategy by suggesting a multiplication approach with '4 boller i hver pose' and '3 poser', which is appropriate for the age group. The language is simple and accessible, avoiding complex terminology, making it suitable for 7-9 year olds.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 84%]
+---------------------------------------------------
+Testing Query: Hvad er 10 delt med 2?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Hvis du har 10 bolsjer og skal dele dem i 2 lige store bunker hvor mange kommer der så i hver?
+Actual (full): "Hvordan kan vi tænke på 10 som en gruppe? Hvis vi deler 10 op i 2 lige store grupper, hvor mange vil der så være i hver gruppe? Prøv at tælle, hvis du deler 10 i to!"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.67 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.67 because while the actual output correctly states that dividing 10 into 2 equal groups results in 5 in each group, the retrieval context does not explicitly support this claim as a fact, leading to a lack of alignment.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the learner, prompting them to think about the concept of grouping 10. It encourages exploration rather than providing direct answers. The language is simple and appropriate for 7-9 year olds, avoiding complex terminology. However, it could have referenced a specific teaching strategy like 'tier-venner' to enhance its educational approach.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 86%]
+---------------------------------------------------
+Testing Query: Kan man dele 5 med 2?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Hvis du har 5 småkager og I er 2 får I 2 hver men der er én tilbage til overs. Det kaldes en rest.
+Actual (full): "Når vi deler, skal vi tænke på, hvor mange gange 2 kan gå ind i 5. Kan du tælle, hvor mange 2'ere der er i 5? Hvad får du, hvis du deler 5 op i grupper af 2?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the student in the division concept, asking them to count how many times 2 fits into 5. This aligns well with the first evaluation step. However, it does not explicitly reference a specific teaching strategy like '10'er venner' or 'tier-venner', which would have strengthened the response further. The language used is simple and appropriate for the target age group, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 88%]
+---------------------------------------------------
+Testing Query: Hvad er 8 minus 0?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Hvis du har 8 og fjerner ingenting hvor mange har du så tilbage?
+Actual (full): "Hvis du har 8 og ikke tager noget væk, hvor mange har du så tilbage? Kan du tælle det?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the child to think about the problem rather than providing a direct answer. The question is simple and appropriate for the target age group, aligning well with the evaluation steps. However, it could have referenced a specific teaching strategy to enhance its educational value.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 90%]
+---------------------------------------------------
+Testing Query: Hvad betyder minus?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: På samme måde kan eleverne med 10’er vennerne løse de regnestykker, som er næsten det 
+samme: “Jeg ved ikke, hvad 7+2 er, men når7+3 bliver 10, så må 7+2 være én mindre, altså 9. 
+10’er vennerne kan o...
+Expected: Det betyder at du trækker noget fra eller finder forskellen mellem to tal.
+Actual (full): "Minus betyder, at vi tager noget væk. Hvis du har 5 æbler og giver 2 væk, hvor mange har du så tilbage? Kan du tælle dem?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions by prompting the learner to think about the subtraction problem rather than providing a direct answer. It also employs simple language suitable for 7-9 year olds, avoiding complex terminology. However, it does not reference a specific teaching strategy like '10'er venner' or 'tier-venner', which could enhance the educational approach.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 92%]
+---------------------------------------------------
+Testing Query: Hvor mange er vi hvis Søren går hjem?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Hvis I var fx 20 før og Søren går skal vi så lægge til eller trække fra?
+Actual (full): "Hvis Søren går hjem, skal vi finde ud af, hvor mange vi er tilbage. Hvor mange var vi før, og hvor mange er Søren? Kan du tælle, hvor mange der er tilbage, hvis vi trækker Søren fra?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the student in problem-solving, asking them to consider how many are left after subtracting Søren. It avoids complex terminology, using simple language suitable for 7-9 year olds. However, it does not explicitly reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 94%]
+---------------------------------------------------
+Testing Query: Hvad betyder 'i alt'?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: metoder til beregninger. Titalssystemets grundlæggende ide er at gruppere enere i grupper af 
+10, tiere af grupper af 100 osv. Tallene angives ved at skrive hvor mange af hver typegruppe, 
+det indehol...
+Expected: Når vi spørger om 'i alt' vil vi gerne vide hvor mange der er når vi samler alle bunkerne til én stor bunke.
+Actual (full): "I alt" betyder, at vi skal finde ud af, hvor mange der er samlet. Kan du tænke på, hvordan vi kan tælle tingene sammen? Hvis du har 3 æbler og 2 pærer, hvordan kan vi finde ud af, hvor mange frugter der er 'i alt'?
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.90 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking, asking the child how to count the fruits together. It avoids complex terminology, using simple language appropriate for 7-9 year olds. However, it does not explicitly reference a specific teaching strategy like '10'er venner' or 'tier-venner', which slightly reduces its alignment with the evaluation steps.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 96%]
+---------------------------------------------------
+Testing Query: Hvad er forskellen på 10 kr. og 10 børn?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: Elevernes udvikling af talforståelse kan flettes sammen med udviklingen af 
+strategier til at tælle og regne. Denne artikel giver ideer til undervisningen i 
+talforståelse i indskolingen. 
+ 
+ 
+Generel...
+Expected: Tallet er det samme men det ene fortæller om en værdi (penge) og det andet er et antal (kardinaltal).
+Actual (full): "Godt spørgsmål! Tænk på 10 kr. som penge, der kan bruges til at købe noget. Hvad kan du købe for 10 kr.? Og tænk på 10 børn som en gruppe. Hvor mange børn er der i klassen? Kan du se forskellen mellem penge og børn?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to encourage critical thinking, asking the child to consider what can be bought with 10 kr. and to compare it to the number of children in the class. However, it lacks a specific teaching strategy reference, which would enhance its educational value. The language is simple and appropriate for the target age group, avoiding complex terminology.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [ 98%]
+---------------------------------------------------
+Testing Query: Hvad er størst: 1 m eller 1 cm?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: mangler jeg at tælle de sidste enere. 77, 78, 79, 80, 81, 82, 83, 84” . Hun flytter en centicube ad 
+gangen. 
+Opdelingsmetoder (eksempel 46 + 38) 
+Albert bygger tallene med centicubes. Han samler de 4...
+Expected: Tænk på linealen. En centimeter er lillebitte. En meter er meget længere. Hvilken enhed er størst?
+Actual (full): "Hvis vi tænker på, hvor mange centimeter der er i en meter, kan du huske, at der er 100 centimeter i 1 meter? Så hvad tror du, er størst: 1 meter eller 1 centimeter?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 0.50 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 0.50 because the actual output incorrectly states that the claim is correct, despite the retrieval context clearly indicating that there are 100 centimeters in 1 meter, which should support the claim rather than contradict it.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses guiding questions to engage the student, prompting them to recall the relationship between meters and centimeters. It avoids overly complex terminology, using simple language suitable for 7-9 year olds. However, it does not explicitly reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+PASSED [100%]
+---------------------------------------------------
+Testing Query: Hvad skal jeg bruge matematik til?
+
+🔍 RETRIEVAL VALIDATION:
+Number of documents retrieved: 3
+✅ Context retrieved successfully from knowledge graph
+
+Retrieved Context: regnestykket. 
+I læseplanen for matematik står der: ”Det er centralt, at læreren udfordrer og støtter de 
+enkelte elever på en måde, så eleverne udvikler deres 
+regnestrategier på baggrund af deres ta...
+Expected: Vi bruger tal til at se hvem der er højest til at købe ind og til at finde ud af hvem der vinder i spil.
+Actual (full): "Matematik hjælper os med at forstå verden omkring os! Vi bruger tal til at tælle ting, som hvor mange venner vi har, eller hvor mange bøger vi læser. Kan du tænke på et eksempel fra din hverdag, hvor du bruger tal?"
+
+⚡ Preparing to evaluate metrics...
+
+
+⚡ Evaluating metrics...
+✅ Evaluated: FaithfulnessMetric
+✅ Evaluated: Pedagogical Quality
+
+============================================================
+📊 DETAILED METRIC RESULTS:
+============================================================
+
+📊 METRIC: FaithfulnessMetric
+Score: 1.00 / 1.00
+Threshold: 0.5
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context.
+------------------------------------------------------------
+
+📊 METRIC: Pedagogical Quality
+Score: 0.80 / 1.00
+Threshold: 0.7
+Status: ✅ PASS
+
+💭 Judge's Reasoning:
+The response effectively uses a guiding question by asking the child to think of a personal example, which encourages engagement. It also employs simple language suitable for 7-9 year olds, avoiding complex terminology. However, it does not reference a specific teaching strategy, which slightly lowers the score.
+------------------------------------------------------------
+============================================================
+
+
+✅ TEST PASSED - All metrics above threshold!
+
+
+
+C:\Users\mnj-7\.conda\envs\DetHerPisBreakerSikkert\Lib\site-packages\neo4j\_sync\driver.py:547: DeprecationWarning: Relying on Driver's destructor to close the session is deprecated. Please make sure to close the session. Use it as a context (`with` statement) or make sure to call `.close()` explicitly. Future versions of the driver will not close drivers automatically.
+
+Process finished with exit code 1

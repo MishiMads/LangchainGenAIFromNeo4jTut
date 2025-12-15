@@ -3,7 +3,7 @@ import re
 import os
 
 # --- CONFIGURATION ---
-INPUT_FILENAME = R'C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\CurriculumTestScriptsAndData\ResultsConsoleLogsFromCurriculumTest\TestOutputGPT4oMiniDeepEval2from11-12-26mTXT.txt'  # Put your log content in this file
+INPUT_FILENAME = R'C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\CurriculumTestScriptsAndData\ResultsConsoleLogsFromCurriculumTest\TestOutputGPT4oMiniDeepEvalfrom11-12-21mTXT(Test6).txt'  # Put your log content in this file
 OUTPUT_FILENAME = 'Math_RAG_Test_Results.xlsx'
 
 

@@ -161,7 +161,7 @@ else:  # Default to local llama
 # 2. DATA LOADING
 # ==========================================
 # Using a relative path is safer than an absolute C:\ path
-filename = R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\genai-integration-langchain\Scripts\GroupedDatasetByStrategy.xlsx"
+filename = R"/genai-integration-langchain/Scripts/GroupedDatasetByStrategy.xlsx"
 test_data = []
 
 print(f"\n--- Loading Test Data from {filename} ---")

@@ -95,7 +95,7 @@ try:
         text_node_property="text",  # <-- MUST match Script 1
     )
 
-    # Create the base retriever
+    # Create the base retriever (the part that gets relevant chunks, the default is 4 so it gets the 4 most relevant)
     vector_retriever = vector_store.as_retriever()
     print("Neo4j vector index connected successfully.")  # Changed message
 except Exception as e:

@@ -12,8 +12,9 @@ load_dotenv()
 # Initialize LLM for evaluation
 llm = ChatOpenAI(
     openai_api_key=os.getenv('OPENAI_API_KEY'),
-    model="gpt-4o-mini",
-    temperature=1
+    model="gpt-4o",
+    model_kwargs={"temperature": 1},
+    response_format={"type": "json_object"}
 )
 
 # Initialize Neo4j driver
@@ -98,25 +99,23 @@ def save_result_to_graph(student_name, operation_name, is_correct):
 
 # Test data
 question_groups = [
-    ["Hvad er 3+5?", "Hvad er 7+6?", "Hvad er 12+4?", "Hvad er 9+8?", "Hvad er 15+3?"],
-    ["Hvad er 10 - 4?", "Hvad er 18 - 7?", "Hvad er 9 - 3?", "Hvad er 14 - 5?", "Hvad er 20 - 9?"],
-    ["Hvad er 3*4?", "Hvad er 5*6?", "Hvad er 2*7?", "Hvad er 8*3?", "Hvad er 4*9?"],
-    ["Hvad er 12/3?", "Hvad er 20/4?", "Hvad er 18/2?", "Hvad er 15/5?", "Hvad er 24/6?"]
-]
+    ["Hvad er 2+3?", "Hvad er 5+5?", "Hvad er 12 + 10?", "Hvad er 17+69?", "Hvad er 96+28?"], #Addition
+    ["Hvad er 2-1?", "Hvad er 8-5?", "Hvad er 10-5?", "Hvad er 72-24?", "Hvad er 114-27?"], #Subtraktion
+    ["Hvad er 2*2?", "Hvad er 4*3?", "Hvad er 10*5?", "Hvad er 12*11?", "Hvad er 9*17?"], #Multiplikation
+    ["Hvad er 4/2?", "Hvad er 9/3?", "Hvad er 12/4?", "Hvad er 60/6?", "Hvad er 52/13?"] #Division
+    ]
 
-smartElev = [
-    "8", "13", "16", "17", "18",
-    "6", "12", "6", "9", "11",
-    "12", "30", "14", "24", "36",
-    "4", "5", "9", "4", "4"
-]
+#Elever's svar:
+Elev1 = [5, 10, 22, 84, 124, 1, 3, 5, 48, 87, 4, 12, 50, 131, 121, 2, 3, 3, 10, 4] #19/20
 
-notSmartElev = [
-    "6", "10", "13", "20", "11",
-    "3", "10", "12", "10", "8",
-    "9", "25", "14", "12", "24",
-    "3", "6", "8", "3", "8"
-]
+Elev2 = [5, 10, 22, 80, 104, 1, 3, 5, 56, 98, 4, 12, 50, 54, 67, 2, 3, 4, 5, 17] #11/20
+
+Elev3 = [5, 8, 13, 70, 101, 1, 5, 2, 60, 100, 2, 10, 15, 20, 25, 2, 6, 8, 12, 40] #3/20
+
+Elev4 = [5, 10, 22, 86, 112, 1, 3, 5, 50, 90, 2, 7, 15, 23, 25, 6, 12, 16, 50, 40] #7/20
+
+Elev5 = [5, 10, 22, 86, 124, 1, 3, 5, 48, 87, 4, 12, 20, 100, 97, 2, 3, 3, 20, 13] #15/20
+
 
 operations = ["Addition", "Subtraktion", "Multiplikation", "Division"]
 FIVE_COUNTER = [0, 1, 2, 3, 4]
@@ -159,7 +158,10 @@ def run_simulation(student_name, student_answers):
 
 if __name__ == "__main__":
     print("Starting simulations...\n")
-    run_simulation("SmartElev", smartElev)
-    run_simulation("NotSmartElev", notSmartElev)
+    run_simulation("Elev1", Elev1)
+    run_simulation("Elev2", Elev2)
+    run_simulation("Elev3", Elev3)
+    run_simulation("Elev4", Elev4)
+    run_simulation("Elve5", Elev5)
     print("\nSimulations complete!")
     graphDriver.close()
