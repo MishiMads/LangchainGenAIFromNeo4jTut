@@ -532,8 +532,7 @@ def test_math_rag(data):
 
     print("=" * 60 + "\n")
 
-# Jeg har udeladt den sidste del med assert_test, da selvom det er nice at have (det evaluere jo metrics igen), så er det lidt fyld.
-# Tror dog ikke det virker så godt med confident AI så
+
     # Now run assert_test for pytest integration (uses already-measured metrics)
     try:
         assert_test(test_case, metrics)

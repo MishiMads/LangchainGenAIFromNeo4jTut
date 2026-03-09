@@ -1,0 +1,16 @@
+# AI & LLM
+langchain==0.3.25
+langgraph==0.4.8
+openai==1.109.1
+anthropic==0.75.0
+ollama==0.6.0
+
+# Data & Science
+pandas==2.3.3
+numpy==1.26.4
+torch==2.9.0
+sentence-transformers==5.1.2
+
+# Utilities
+python-dotenv==1.2.1
+pydantic==2.12.3

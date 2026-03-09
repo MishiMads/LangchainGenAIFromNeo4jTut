@@ -21,19 +21,14 @@ graph = Neo4jGraph(
     database=os.getenv("NEO4J_DATABASE")
 )
 
-# For a fresh start, you can uncomment the next line to delete all existing data
-# print("Clearing the database...")
-# graph.query("MATCH (n) DETACH DELETE n")
 
-
-# --- 2. Load and Process Multiple PDF Documents ---
 pdf_paths = [
     R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Fokus_På_Regnestrategier.pdf",
     R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Talforståelse.pdf",
     R"C:\Users\mnj-7\Medialogi\LangchainGenAIFromNeo4jTut\PDF_Files\Tidlig_Algebra.pdf"
 ]
 
-all_documents = []  # This will store chunks from all PDFs
+all_documents = []  # This stores chunks from all PDFs
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1500,
@@ -51,14 +46,13 @@ for pdf_path in pdf_paths:
 
 print(f"\nTotal chunks from all documents: {len(all_documents)}")
 
-# --- 3. Extract a Knowledge Graph using a Local LLM (Guided by Your Schema) ---
+# --- 3. Part that extracts a Knowledge Graph using a Local LLM  ---
 print("Extracting entities and relationships using local LLM...")
 
 # Instantiate the local LLM through Ollama
 llm = ChatOllama(model="llama3.1", temperature=0)
 
-# *** MODIFICATION HERE ***
-# We instruct the transformer to ONLY use your specified schema
+# The transformer that will convert text chunks into graph structures
 llm_transformer = LLMGraphTransformer(
     llm=llm,
     allowed_nodes=["Topic", "Subject"],
@@ -66,7 +60,6 @@ llm_transformer = LLMGraphTransformer(
 )
 
 # Process ALL documents and convert them to graph structures
-# *** BUG FIX: Using all_documents, not just documents ***
 print("Converting all documents to graph format...")
 graph_documents = llm_transformer.convert_to_graph_documents(all_documents)
 
@@ -79,9 +72,8 @@ graph.add_graph_documents(
 )
 print("Successfully stored knowledge graph in Neo4j.")
 
-# --- 4. Create a Vector Index for Semantic Search ---
-# This part is separate from the knowledge graph. It creates 'MathChunks' nodes
-# for similarity search on the raw text chunks.
+# --- 4. Part that creates a Vector Index for Semantic Search ---
+
 
 print("\nCreating embedding model for vector index...")
 model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
@@ -103,7 +95,7 @@ neo4j_vector = Neo4jVector.from_documents(
 )
 print("Successfully created and populated the 'Math' vector index.")
 
-# --- 5. Verify the Results ---
+# --- 5. Part that verifies the results --- (JUST SOME EXTRA STUFF, NOT REALLY PART OF CONSTRUCTING THE KNOWLEDGE GRAPH
 print("\n--- Verification ---")
 
 # A. Verify the knowledge graph by counting nodes and relationships

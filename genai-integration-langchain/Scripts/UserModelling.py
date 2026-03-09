@@ -48,7 +48,7 @@ llm = ChatOllama(
 # --- 2. Initialize the Embedding Model for Retrieval ---
 print("Initializing Hugging Face embedding model...")
 model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-model_kwargs = {'device': 'cuda'}  # Use GPU (change to 'cpu' if needed)
+model_kwargs = {'device': 'cuda'}
 embedding_model = HuggingFaceEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs
@@ -56,9 +56,9 @@ embedding_model = HuggingFaceEmbeddings(
 
 # --- 3. Connect to Neo4j (Both Driver and Vector Store) ---
 
-# !!! --- ADD THIS DEBUG LINE --- !!!
+
 print(f"--- DEBUG: Attempting to connect to database: '{os.getenv('NEO4J_DATABASE')}' ---")
-# !!! --- END DEBUG LINE --- !!!
+
 
 # A. Initialize the Neo4j Driver (for writing/reading history)
 print("Connecting to Neo4j for writes/history...")
@@ -85,19 +85,18 @@ try:
         username=os.getenv("NEO4J_USERNAME"),
         password=os.getenv("NEO4J_PASSWORD"),
         database=os.getenv("NEO4J_DATABASE"),
-        index_name="Math",  # <-- MUST match Script 1
+        index_name="Math",
 
-        # --- ADD THESE MISSING LINES ---
-        node_label="MathChunks",  # <-- This was the main problem
-        embedding_node_property="embedding",  # <-- Add for completeness
-        # ---
+        node_label="MathChunks",
+        embedding_node_property="embedding",
 
-        text_node_property="text",  # <-- MUST match Script 1
+
+        text_node_property="text",
     )
 
     # Create the base retriever (the part that gets relevant chunks, the default is 4 so it gets the 4 most relevant)
     vector_retriever = vector_store.as_retriever()
-    print("Neo4j vector index connected successfully.")  # Changed message
+    print("Neo4j vector index connected successfully.")
 except Exception as e:
     print(f"Failed to connect to Neo4j vector index: {e}")
     neo4j_driver.close()
@@ -143,10 +142,9 @@ def get_personalized_context(input_dict):
 
     # 3. Combine contexts
     final_context = f"{history_context}\n\n--- General Knowledge Context ---\n{vector_context}"
-    # print(f"--- DEBUG: CONTEXT ---\n{final_context}\n--- END DEBUG ---") # Uncomment for debugging
     return final_context
 
-# Create the new prompt template
+
 template = """Answer the question based ONLY on the following context.
 The context may contain 'General Knowledge' and 'User's Recent History'.
 Use the user's history to understand what they are talking about.
@@ -158,12 +156,12 @@ Question: {question}
 """
 prompt = ChatPromptTemplate.from_template(template)
 
-# Build the new chain
+
 rag_chain = (
     {
         "context": RunnableLambda(get_personalized_context),
         "question": lambda x: x["question"],
-        "user_id": lambda x: x["user_id"] # Pass user_id through
+        "user_id": lambda x: x["user_id"]
     }
     | prompt
     | llm
@@ -172,10 +170,10 @@ rag_chain = (
 
 # --- 5. Invoke the chain and Log Interactions ---
 
-# Define our user
-user_id = "Jakob"
 
-# --- First Question ---
+user_id = "Niklas"
+
+
 question_1 = "Hej jeg hedder Jakob, hvad for noget matematik skal jeg lære?"
 print(f"\nInvoking chain for user '{user_id}' with question: {question_1}")
 
@@ -184,11 +182,11 @@ response_1 = rag_chain.invoke({"question": question_1, "user_id": user_id})
 print("\n--- Final Answer 1 ---")
 print(response_1)
 
-# Log this interaction
+
 print("Logging interaction 1 to Neo4j...")
 log_interaction(neo4j_driver, user_id, question_1, response_1)
 
-# --- Second (Follow-up) Question ---
+
 question_2 = "Hvad var det nu, jeg spurgte om lige før?"
 print(f"\nInvoking chain for user '{user_id}' with follow-up: {question_2}")
 
@@ -198,7 +196,7 @@ print("\n--- Final Answer 2 (Follow-up) ---")
 print(response_2)
 print("(This answer should use the history of the first question)")
 
-# Log this interaction
+
 print("Logging interaction 2 to Neo4j...")
 log_interaction(neo4j_driver, user_id, question_2, response_2)
 
